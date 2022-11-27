@@ -1,0 +1,20 @@
+﻿@model Pro_1_MVC_Learning.Models.Person
+
+@{
+    ViewBag.Title = "Index2";
+    Layout = "~/Views/_Layer1.cshtml";
+}
+
+<div>
+    <h2>Index2</h2>
+    @for (int i = 0; i < 3; i++)
+    {
+        <div style="border:1px solid red;">
+            <p>ID : @Model.Id</p>
+            <p>Name : @Model.Name</p>
+            <p>Family : @Model.LastName</p>
+            <p>Age : @Model.Age</p>
+            <p>Phone : @Model.Phone</p>
+        </div>
+    }
+</div>

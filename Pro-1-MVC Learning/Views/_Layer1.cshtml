@@ -1,0 +1,80 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My MVC App</title>
+    <style>
+        div {
+            background: black;
+            margin: 2rem;
+            padding: 2rem;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        #header {
+            background: #000000;
+            box-shadow: 0 0 20px 0 #3d3d3d;
+            color: white;
+        }
+        #header ul{
+            list-style: none;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            margin:1rem;
+        }
+        #header ul li{
+            margin:1rem;
+            padding: 1rem;
+            cursor:pointer;
+            color: #007aff;
+        }
+        a{
+            text-decoration: none;
+        }
+        #header ul li a:hover{
+            color: #e500ff;
+            transform: scale(1.3);
+        }
+        #section {
+            background: #ffd800;
+            box-shadow: 0 0 20px 0 #0000009e;
+            color: #2a2a2a;
+        }
+
+        #footer {
+            background: #353535;
+            box-shadow: 0 0 20px 0 #0000009e;
+            color: #97ff00;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1>This is Header _Layer1</h1>
+        <ul>
+            <li><a href="/Home/Index">Index</a></li>
+            <li><a href="/Home/Index1">Index1</a></li>
+            <li><a href="/Home/Index2">Index2</a></li>
+            <li><a href="/Home/About2">About</a></li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>This is Section _Layer1</h1>
+        @RenderBody()
+    </div>
+    <div id="footer">
+        <h1>This is Footer _Layer1</h1>
+    </div>
+</body>
+</html>

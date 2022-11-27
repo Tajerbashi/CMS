@@ -1,0 +1,57 @@
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\Pro-1-MVC Learning.dll.config
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\Pro-1-MVC Learning.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\Pro-1-MVC Learning.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\csc.exe
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\csc.exe.config
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\csc.rsp
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\csi.exe
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\csi.exe.config
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\csi.rsp
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\System.Buffers.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\System.Memory.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\vbc.exe
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\vbc.exe.config
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\vbc.rsp
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\EntityFramework.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\EntityFramework.SqlServer.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Helpers.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Mvc.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Razor.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Webpages.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Webpages.Razor.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\EntityFramework.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\EntityFramework.SqlServer.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Razor.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Webpages.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Webpages.Razor.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Helpers.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\System.Web.Mvc.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\obj\Debug\Pro-1-MVC Learning.csproj.AssemblyReference.cache
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\obj\Debug\Pro-1-MVC Learning.csproj.CoreCompileInputs.cache
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\obj\Debug\Pro-1-MVC Learning.csproj.CopyComplete
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\obj\Debug\Pro-1-MVC Learning.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\obj\Debug\Pro-1-MVC Learning.pdb
