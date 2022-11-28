@@ -1,45 +1,15 @@
 ﻿
-@model Pro_1_MVC_Learning.Models.Person
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <style>
-        div {
-            background: black;
-            margin: 2rem;
-            padding: 2rem;
-            color: white;
-            text-align: center;
-        }
-
-        #info {
-            background: #d13300;
-            margin: 2rem 5rem;
-            padding: 2rem;
-            color: white;
-            text-align: left;
-        }
-    </style>
-</head>
-<body>
-    <div>
-        This is Header of Index
-    </div>
-    <div id="info">
-        <h1>This is Person Information from Model of Index</h1>
-        <p>ID : @Model.Id</p>
-        <p>Name : @Model.Name</p>
-        <p>LastName : @Model.LastName</p>
-        <p>Age : @Model.Age</p>
-        <p>Phone : @Model.Phone</p>
-    </div>
-    <div>
-        This is Footer of Index
-    </div>
-</body>
-</html>
-
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<div class="Collection">
+    @for (int i = 0; i < 10; i++)
+    {
+        <div class="item">
+            <h3>Title</h3>
+            <img class="img" src="~/Image/P2.jpg" />
+            <button class="item-click">Click</button>
+        </div>
+    }
+</div>

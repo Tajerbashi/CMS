@@ -1,0 +1,134 @@
+﻿#header, #nav, #section, #footer {
+    background: black;
+    margin: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 #3d3d3d;
+}
+#header {
+    background: #0a0065d1;
+    color: white;
+    padding: 5rem 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+/*nav bar Style*/
+#nav {
+    background: #1000a4d1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    
+}
+#div-list{
+    width: 70%;
+}
+#list {
+    font-size: 1.3rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item {
+    background: #ffdada00;
+    border-bottom: 1px solid white;
+    color: black;
+    padding: 0.5rem 1rem;
+}
+.nav-item:hover, a {
+    transform: scale(1.2);
+    color: white;
+}
+
+.nav-item a {
+    color: white;
+}
+#searchControl {
+    border-radius: 1rem;
+    background: white;
+    border: 1px solid #00000000;
+}
+#searchControl input{
+    outline: none;
+    border: 1px solid #00000000;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: #00000000;
+}
+#searchControl button {
+    border-radius: 1rem;
+    background: #1000a4d1;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 1px solid #00000000;
+    color: #ffffff7c;
+}
+#searchControl button:hover {
+    background: black;
+    color: white;
+    border: 1px solid #00000000;
+    transform: scale(1.1);
+}
+
+#section {
+    background: linear-gradient(0deg,#ff2d2d,#ffea00,#ff7539);
+    color: #0a0065d1;
+    padding: 1rem;
+}
+#footer {
+    padding: 5rem 1rem;
+    background: black;
+    color: white;
+
+}
+.Collection{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 1rem;
+    margin: 1rem;
+    background: #ffffff7c;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 #565656;
+    cursor: pointer;
+}
+.item:hover{
+    box-shadow: 0 0 15px 0 #282828;
+}
+.item h3{
+    color: #ff3700;
+}
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.item-click {
+    color: white;
+    background: #007aff;
+    padding: 0.5rem 3rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: 1px solid #ffffff00;
+}
+button:hover{
+    background: #0350a3;
+}

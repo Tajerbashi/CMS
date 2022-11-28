@@ -9,10 +9,11 @@ namespace Pro_1_MVC_Learning.Controllers
 {
     public class HomeController:Controller
     {
+        // Home/Index
         public ActionResult Index()
         {
             // Index
-
+            ViewBag.Title = "INDEX";
             var person = new Person();
             person.Id = 1;
             person.Name = "Kaihan";
@@ -21,29 +22,6 @@ namespace Pro_1_MVC_Learning.Controllers
             person.Phone = "09020320844";
 
             return View(person);
-        }
-        public ActionResult Index1()
-        {
-            // Index1
-            return View();
-        }
-        public ActionResult Index2()
-        {
-            // _Layer1
-
-            var person = new Person();
-            person.Id = 1;
-            person.Name = "Kaihan";
-            person.LastName = "Tajerbashi";
-            person.Age = 30;
-            person.Phone = "09020320844";
-
-            return View(person);
-        }
-        public ActionResult About2()
-        {
-            // _Layer1
-            return View();
         }
     }
 }
