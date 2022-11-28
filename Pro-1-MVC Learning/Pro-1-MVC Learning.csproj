@@ -119,7 +119,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Manager.cshtml" />
     <Content Include="Views\Home\Tools.cshtml" />
-    <Content Include="Views\Home\Manager.cshtml" />
     <Content Include="Views\Home\ManagerNews.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
