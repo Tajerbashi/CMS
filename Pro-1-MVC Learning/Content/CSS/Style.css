@@ -63,18 +63,19 @@ a {
     background: #00000000;
 }
 #searchControl button {
-    border-radius: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    transform: scale(1.2);
     background: #1000a4d1;
     cursor: pointer;
     padding: 0.5rem;
-    border: 1px solid #00000000;
+    border: 1px solid #ffffff00;
     color: #ffffff7c;
 }
 #searchControl button:hover {
     background: black;
     color: white;
     border: 1px solid #00000000;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #section {

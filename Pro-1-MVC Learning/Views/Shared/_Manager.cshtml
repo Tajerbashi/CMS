@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/CSS/Manager.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="header">
+        <h1>This is Manager Panel</h1>
+    </div>
+    <div id="section">
+        <div id="article">
+            <ul id="A-List">
+                <li><a href="/Home/Index">Home</a></li>
+                <li><a href="/Home/ManagerNews">News</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Tools</a></li>
+            </ul>
+        </div>
+        <div id="Panel">
+            @RenderBody()
+        </div>
+    </div>
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+
+</body>
+</html>

@@ -23,5 +23,38 @@ namespace Pro_1_MVC_Learning.Controllers
 
             return View(person);
         }
+        // Home/News
+        public ActionResult News()
+        {
+            // News
+
+            return View();
+        }
+        // Home/Products
+        public ActionResult Products()
+        {
+            return View();
+        }
+        // Home/Tools
+        public ActionResult Tools()
+        {
+            return View();
+        }
+        // Home/Abouts
+        public ActionResult About()
+        {
+            return View();
+        }
+        // Home/Manager
+        public ActionResult Manager()
+        {
+            // Manager
+            return View();
+        }
+        public ActionResult ManagerNews()
+        {
+            // ManagerNewa
+            return View();
+        }
     }
 }
