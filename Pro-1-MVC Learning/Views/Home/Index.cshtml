@@ -4,12 +4,12 @@
     Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 <div class="Collection">
-    @for (int i = 0; i < 10; i++)
+    @for (int c=1, i = 0; i < 10; i++,c++)
     {
         <div class="item">
-            <h3>Title : @(i + 1)</h3>
-            <img class="img" src="~/Image/P@(i+1).jpg" />
-            <a class="item-click" href="@Url.RouteUrl("NewsInfoByID",new {id=i+1})">Click</a>
+            <h3>Title : @c</h3>
+            <img class="img" src="~/Image/P@(c).jpg" />
+            <a class="item-click" href="@Url.RouteUrl("NewsInfoByID",new {id=c})">Click</a>
         </div>
     }
 </div>

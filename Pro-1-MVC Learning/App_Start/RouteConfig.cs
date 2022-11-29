@@ -19,7 +19,7 @@ namespace Pro_1_MVC_Learning
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-            routes.MapRoute("NewsInfoByID", "News/NewsInfo/{id}/{admin}", new { id="1" ,admin=UrlParameter.Optional});
+            routes.MapRoute("NewsInfoByID", "News/NewsInfo/{id}/{admin}", new { admin=UrlParameter.Optional});
         }
     }
 }

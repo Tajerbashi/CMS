@@ -5,11 +5,32 @@
 }
 
 <div>
-    <div>
-        <p>ID : @Model.Id</p>
-        <p>Title : @Model.Title</p>
-        <p>Info : @Model.Info</p>
-    </div>
-    <a href="@Url.Action("Index","Home")"><button>Go Back</button></a>
+    @if (Model != null)
+    {
+        <div>
+            <p>ID : @Model.Id</p>
+            <p>Title : @Model.Title</p>
+            <p>Info : @Model.Info</p>
+        </div>
+    }
+    else
+    {
+        <h1>No record about this Id Admin</h1>
+    }
+    <a href="@Url.Action("Index","Home")">Go Back</a>
+</div>
+<div>
+    <h1>This is used from HTML Helper</h1>
+    @if (Model != null)
+    {
+        @Html.Raw("<p>ID : "+Model.Id+"</p>");
+        @Html.Raw("<p>Title : "+Model.Title+"</p>");
+        @Html.Raw("<p>Info : "+Model.Info+"</p>");
+    }
+    else
+    {
+        @Html.Raw("<h1>No Record in System.</h1>");
+    }
+    <a href="@Url.Action("Index","Home")">Go Back</a>
 </div>
 
