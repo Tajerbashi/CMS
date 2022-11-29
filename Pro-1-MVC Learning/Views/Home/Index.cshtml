@@ -1,15 +1,60 @@
 ﻿@model Pro_1_MVC_Learning.Models.Person
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout1.cshtml";
+    Layout = "~/Views/Shared/_Home.cshtml";
 }
-<div class="Collection">
-    @for (int c=1, i = 0; i < 10; i++,c++)
-    {
-        <div class="item">
-            <h3>Title : @c</h3>
-            <img class="img" src="~/Image/P@(c).jpg" />
-            <a class="item-click" href="@Url.RouteUrl("NewsInfoByID",new {id=c})">Click</a>
-        </div>
-    }
+<div id="home-section">
+    <div id="home-news">
+        <h1>News</h1>
+        @for (int c = 1, i = 0; i < 10; i++, c++)
+        {
+            <div class="home-news-item">
+                <img class="home-news-img" src="~/Image/P@(c).jpg" />
+                <div class="home-news-ifo">
+                    <h2 class="home-news-title">News : @c</h2>
+                    <p class="home-news-info">
+                        This is a sample text.
+                        This is a sample text.
+                        This is a sample text.
+                        This is a sample text.
+                        This is a sample text.
+                    </p>
+                    <a class="home-news-click" href="#">Click</a>
+                </div>
+            </div>
+        }
+    </div>
+    <div id="home-products">
+        <h1>Products</h1>
+        @for (int c = 1, i = 0; i < 10; i++, c++)
+        {
+            <div class="home-product-item">
+                <img class="home-product-img" src="~/Image/P@(c).jpg" />
+                <div class="home-product-ifo">
+                    <h2 class="home-product-title">Product : @c</h2>
+                    <p class="home-product-info">
+                        This is a sample text.
+                        This is a sample text.
+                        This is a sample text.
+                        This is a sample text.
+                        This is a sample text.
+                    </p>
+                    <a class="home-product-click" href="#">Click</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<div id="home-topics">
+    <h1>Topics</h1>
+    <div id="home-topics-nav">
+        @for (int c = 1, i = 0; i < 16; i++, c++)
+        {
+            <div class="home-topics-item">
+                <img class="home-topics-img" src="~/Image/P@(c).jpg" />
+                <h4 class="home-topics-title">Author : @c</h4>
+                <a class="home-topics-click" href="#">Click</a>
+            </div>
+        }
+    </div>
 </div>

@@ -1,0 +1,28 @@
+﻿@model Pro_1_MVC_Learning.Models.News
+@{
+    ViewBag.Title = "CreateNews";
+    Layout = "~/Views/Shared/_Manager.cshtml";
+}
+
+<h2>@Model.Id</h2>
+<h2>@Model.Title</h2>
+<h2>@Model.Info</h2>
+@{
+    ViewBag.Title = "ManagerNews";
+    Layout = "~/Views/Shared/_Manager.cshtml";
+}
+@{
+    Pro_1_MVC_Learning.Models.News news = new Pro_1_MVC_Learning.Models.News();
+
+}
+<div id="container">
+    <form id="form" method="post" action="@Url.Action("Create","NewsCrud")">
+        <input class="input" type="text" placeholder="Enter Title ... " />
+        <input class="input" type="text" placeholder="Enter Info ... " />
+        <input class="input file" type="file" placeholder="Enter Info ... " value="Pic" />
+    </form>
+    <div>
+        <button class="btn"><a href="@Url.RouteUrl("NewsCreate",new {Id=1,Title="I am",Info="Kamran"})">CREATE</a></button>
+    </div>
+</div>
+

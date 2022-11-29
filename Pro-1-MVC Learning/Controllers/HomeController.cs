@@ -13,21 +13,12 @@ namespace Pro_1_MVC_Learning.Controllers
         public ActionResult Index()
         {
             // Index
-            ViewBag.Title = "INDEX";
-            var person = new Person();
-            person.Id = 1;
-            person.Name = "Kaihan";
-            person.LastName = "Tajerbashi";
-            person.Age = 30;
-            person.Phone = "09020320844";
-
-            return View(person);
+            return View();
         }
         // Home/News
         public ActionResult News()
         {
             // News
-
             return View();
         }
         // Home/Products

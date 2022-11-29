@@ -14,12 +14,12 @@ namespace Pro_1_MVC_Learning
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
-            routes.MapRoute("NewsInfoByID", "News/NewsInfo/{id}/{admin}", new { admin=UrlParameter.Optional});
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
+            routes.MapRoute("Home","{controller}/{action}",new {controller="Home", action="Index"});
         }
     }
 }
