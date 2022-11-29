@@ -120,16 +120,17 @@ a {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+    box-shadow: 0 0 15px 0 black;
 }
 .item-click {
-    color: white;
+    color: black;
     background: #007aff;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
     margin: 1rem;
     cursor: pointer;
     border-radius: 0.4rem;
     border: 1px solid #ffffff00;
 }
-button:hover{
-    background: #0350a3;
+.item-click:hover {
+    background: #0a0065d1;
 }

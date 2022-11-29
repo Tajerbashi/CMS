@@ -7,9 +7,9 @@
     @for (int i = 0; i < 10; i++)
     {
         <div class="item">
-            <h3>Title</h3>
-            <img class="img" src="~/Image/P2.jpg" />
-            <button class="item-click">Click</button>
+            <h3>Title : @(i + 1)</h3>
+            <img class="img" src="~/Image/P@(i+1).jpg" />
+            <a class="item-click" href="@Url.RouteUrl("NewsInfoByID",new {id=i+1})">Click</a>
         </div>
     }
 </div>

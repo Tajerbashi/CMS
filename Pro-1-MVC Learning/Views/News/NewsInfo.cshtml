@@ -1,0 +1,15 @@
+﻿@model Pro_1_MVC_Learning.Models.News
+@{
+    ViewBag.Title = "NewsInfo";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<div>
+    <div>
+        <p>ID : @Model.Id</p>
+        <p>Title : @Model.Title</p>
+        <p>Info : @Model.Info</p>
+    </div>
+    <a href="@Url.Action("Index","Home")"><button>Go Back</button></a>
+</div>
+
