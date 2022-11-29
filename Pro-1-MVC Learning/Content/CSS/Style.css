@@ -92,7 +92,7 @@ a {
     color: white;
 }
 #footer-div1 {
-    background: #1700aa;
+    background: #250053;
     width: 80%;
     height: 50px;
     border-radius: 1rem 1rem 0 0;
@@ -109,8 +109,8 @@ a {
     background: #0300ff;
     width: 90%;
     height: 100px;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 5px 0 black;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 0 black;
 }
 #home-footer-comment > form {
     display: flex;
@@ -222,6 +222,9 @@ a {
     height: 1000px;
     overflow: auto;
 }
+#home-news::-webkit-scrollbar{
+    width: 1px;
+}
 #home-news > h1 {
     background: #0b006dff;
     color:wheat;
@@ -291,6 +294,9 @@ a {
     width: 45%;
     height: 1000px;
     overflow: auto;
+}
+#home-products::-webkit-scrollbar {
+    width: 1px;
 }
 #home-products > h1 {
     background: #3b006fff;
@@ -369,8 +375,22 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
-    overflow: auto;
+    overflow-x: auto;
+    width: 90%;
+}
+
+#home-topics-nav::-webkit-scrollbar {
+    width: 10px;
+}
+#home-topics-nav::-webkit-scrollbar-track {
+    background-color: white;
+    cursor: pointer;
+
+}
+#home-topics-nav::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
 }
 .home-topics-item {
     margin: 0.5rem;
