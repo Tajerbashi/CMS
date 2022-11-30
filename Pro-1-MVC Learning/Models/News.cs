@@ -13,7 +13,7 @@ namespace Pro_1_MVC_Learning.Models
         public string Picture { get; set; }
         public int Like { get; set; }
         public int CommentCount { get; set; }
-        public String CommentInfo { get; set; }
+        public string CommentInfo { get; set; }
         public bool IsActive { get; set; }
     }
 }

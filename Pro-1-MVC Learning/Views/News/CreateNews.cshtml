@@ -1,0 +1,31 @@
+﻿@model Pro_1_MVC_Learning.Models.News
+
+@{
+    ViewBag.Title = "CreateNews";
+    Layout = "~/Views/Shared/_Home.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateNews</title>
+</head>
+<body>
+    <div id="news-Container-form">
+        @using (Html.BeginForm("SubmitNews", "News", FormMethod.Post, new { id = "new-form-in-container" }))
+        {
+            @Html.LabelFor(model => model.Id) @Html.HiddenFor(model => model.Id)
+            @Html.LabelFor(model => model.Title) @Html.TextBoxFor(model => model.Title)
+            @Html.LabelFor(model => model.Info) @Html.TextBoxFor(model => model.Info)
+            @Html.LabelFor(model => model.Picture) <input type="file" name="Picture" value="@Model.Picture" />
+            @Html.LabelFor(model => model.Like) <input type="number" name="Like" value="@Model.Like" />
+            @Html.LabelFor(model => model.CommentInfo) @Html.TextBoxFor(model => model.CommentInfo)
+            @Html.LabelFor(model => model.CommentCount) <input type="number" name="CommentCount" value="@Model.CommentCount" />
+            @Html.LabelFor(model => model.IsActive) @Html.CheckBoxFor(model => model.IsActive)
+            <input type="submit" id="submit-form-Create-news" value="Submit" />
+        }
+    </div>
+</body>
+</html>

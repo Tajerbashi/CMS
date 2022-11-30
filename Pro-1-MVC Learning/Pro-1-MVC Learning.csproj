@@ -94,7 +94,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\CSS\Manager.css" />
+    <Content Include="Content\CSS\CRUDForm.css" />
     <Content Include="Content\CSS\Style.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -102,14 +102,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202211290653012_ver1.cs" />
-    <Compile Include="Migrations\202211290653012_ver1.designer.cs">
-      <DependentUpon>202211290653012_ver1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DB_Class.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\Person.cs" />
@@ -122,9 +118,8 @@
     <Content Include="Views\Shared\_Home.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\_Manager.cshtml" />
-    <Content Include="Views\News\NewsInfo.cshtml" />
-    <Content Include="Views\NewsCrud\CreateNews.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\CreateNews.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -135,11 +130,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Image\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202211290653012_ver1.resx">
-      <DependentUpon>202211290653012_ver1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

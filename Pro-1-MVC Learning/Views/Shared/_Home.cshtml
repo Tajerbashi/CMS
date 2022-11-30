@@ -5,6 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/CSS/Style.css" rel="stylesheet" />
+    <link href="~/Content/CSS/CRUDForm.css" rel="stylesheet" />
     <title>My MVC App : @ViewBag.Title</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <div id="div-list">
             <ul id="list">
                 <li class="nav-item"><a href="@Url.RouteUrl("Home")">Home</a></li>
-                <li class="nav-item"><a href="/Home/News">News</a></li>
+                <li class="nav-item"><a href="@Url.RouteUrl("NewsInfo",new {Id=0})">News</a></li>
                 <li class="nav-item"><a href="/Home/Products">Products</a></li>
                 <li class="nav-item"><a href="/Home/Tools">Topics</a></li>
                 <li class="nav-item"><a href="/Home/About">About</a></li>
