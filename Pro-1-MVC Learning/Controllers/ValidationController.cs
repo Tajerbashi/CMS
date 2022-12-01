@@ -22,9 +22,13 @@ namespace Pro_1_MVC_Learning.Controllers
         [HttpPost]
         public ActionResult Create(Person person)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("RegisterForm", person);
+            }
             DB.People.Add(person);
             DB.SaveChanges();
-            return RedirectToRoute("ValidationRegisterForm");
+            return RedirectToRoute("ValidatonShowData");
         }
         public ActionResult ShowData()
         {

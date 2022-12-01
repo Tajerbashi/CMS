@@ -588,18 +588,23 @@ a {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px 0 #000;
-    width: 40%;
+    width: 30%;
     color: white;
 }
-#Validation-Form > input {
+#Validation-Form {
+    align-items: flex-end;
+}
+#Validation-Form > p > input {
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     outline: none;
+
 }
-#Validation-Form > input:focus {
+#Validation-Form > p > input:focus {
     box-shadow: 0 0 10px 0 #000;
 }
 #validation-submit {
+    padding: 0.5rem 2rem;
     text-align: center;
     cursor: pointer;
     background: #5900ff;
@@ -647,4 +652,8 @@ a {
 }
 #validation-controller > a:hover{
     box-shadow: 0 0 10px 0 white;
+}
+.input-validation-error{
+    border: 1px solid red;
+    background: #ff8b8b;
 }
