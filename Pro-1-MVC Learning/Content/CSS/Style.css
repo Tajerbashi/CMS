@@ -657,3 +657,35 @@ a {
     border: 1px solid red;
     background: #ff8b8b;
 }
+.validation-summary-errors{
+    align-content:flex-start;
+    align-items: flex-start;
+    background: #ff3b3b;
+    border: 1px solid #ba0000;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 black;
+}
+.validation-summary-errors ul{
+    list-style: none;
+
+}
+.validation-summary-errors ul li{
+    margin: 1rem;
+}
+.validation-summary-errors ul li:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.field-validation-error {
+    border: 1px solid red;
+    background: #ff8b8b;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+.field-validation-error:hover {
+    border: 1px solid red;
+    background: red;
+    padding: 0.2rem 1rem;
+}
