@@ -21,6 +21,9 @@ namespace Pro_1_MVC_Learning
             routes.MapRoute("SubmitNews", "News/SubmitNews", new { controller = "News", action = "SubmitNews" });
             routes.MapRoute("UpdateNews", "News/Update/{id}", new { controller = "News", action = "Update" });
             routes.MapRoute("DeleteNews", "News/Delete/{id}", new { controller = "News", action = "Delete" });
+
+            routes.MapRoute("ModelIndex", "ModelIndex", new { controller = "ModelBinding", action = "Index" });
+            routes.MapRoute("ModelSubmit", "ModelSubmit", new { controller = "ModelBinding", action = "Submit" });
         }
     }
 }

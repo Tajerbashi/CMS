@@ -10,10 +10,11 @@ namespace Pro_1_MVC_Learning.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Info { get; set; }
-        public string Picture { get; set; }
-        public int Like { get; set; }
-        public int CommentCount { get; set; }
-        public string CommentInfo { get; set; }
-        public bool IsActive { get; set; }
+        public int Counter { get; set; }
+        //public string Picture { get; set; }
+        //public int Like { get; set; }
+        //public int CommentCount { get; set; }
+        //public string CommentInfo { get; set; }
+        //public bool IsActive { get; set; }
     }
 }

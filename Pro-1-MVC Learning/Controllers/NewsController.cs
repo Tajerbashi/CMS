@@ -30,11 +30,11 @@ namespace Pro_1_MVC_Learning.Controllers
                 News news1= DB.News.Find(news.Id);
                 news1.Title = news.Title;
                 news1.Info = news.Info;
-                news1.Picture = news.Picture;
-                news1.Like=news.Like;
-                news1.CommentInfo = news.CommentInfo;
-                news1.CommentCount =news.CommentCount;
-                news1.IsActive =news.IsActive;
+                //news1.Picture = news.Picture;
+                //news1.Like=news.Like;
+                //news1.CommentInfo = news.CommentInfo;
+                //news1.CommentCount =news.CommentCount;
+                //news1.IsActive =news.IsActive;
             }
             else
             {

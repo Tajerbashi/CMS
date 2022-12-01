@@ -539,3 +539,36 @@ a {
     border-radius: 1rem;
     box-shadow: 0 0 10px 0 white;
 }
+#Model-Binding-Form {
+    background: linear-gradient(90deg,#004bff,#8300a3);
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+#Model-Binding-Form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff4b;
+    padding: 1rem;
+    border: 1px solid white;
+    width: 30%;
+}
+#Model-Binding-Form form input{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: 1px solid white;
+    outline: none;
+    background: #ffffff70;
+    color: white;
+}
+#Submit-model-binding{
+    background: #3900ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+#Submit-model-binding:hover {
+    background: #210096;
+}

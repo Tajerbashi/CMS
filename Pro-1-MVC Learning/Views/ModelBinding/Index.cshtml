@@ -1,0 +1,17 @@
+﻿@model Pro_1_MVC_Learning.Models.News
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Home.cshtml";
+}
+
+<div id="Model-Binding-Form">
+    @using (Html.BeginForm("Submit", "ModelBinding", FormMethod.Post))
+    {
+        @Html.TextBoxFor(model => model.Title, "", new { placeholder = "Enter Title ..." });
+        @Html.TextBoxFor(model => model.Info, "", new { placeholder = "Enter Info ..." });
+        @Html.TextBoxFor(model => model.Counter, "", new { placeholder = "Enter Counter ..." });
+        <input id="Submit-model-binding" type="submit" value="Submit" />
+    }
+</div>
+
