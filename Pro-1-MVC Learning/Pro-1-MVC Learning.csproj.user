@@ -15,7 +15,7 @@
     <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
-    <WebStackScaffolding_LayoutPageFile>~/Views/Shared/_Home.cshtml</WebStackScaffolding_LayoutPageFile>
+    <WebStackScaffolding_LayoutPageFile>~/Views/Validation/Index.cshtml</WebStackScaffolding_LayoutPageFile>
     <WebStackScaffolding_DbContextTypeFullName>Pro_1_MVC_Learning.Models.DB_Class</WebStackScaffolding_DbContextTypeFullName>
     <ProjectView>ProjectFiles</ProjectView>
     <Controller_SelectedScaffolderID>MvcControllerEmptyScaffolder</Controller_SelectedScaffolderID>

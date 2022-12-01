@@ -104,11 +104,13 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ModelBindingController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\ValidationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DB_Class.cs" />
     <Compile Include="Models\News.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +122,9 @@
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\News\CreateNews.cshtml" />
     <Content Include="Views\ModelBinding\Index.cshtml" />
+    <Content Include="Views\Validation\Index.cshtml" />
+    <Content Include="Views\Validation\RegisterForm.cshtml" />
+    <Content Include="Views\Validation\ShowData.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

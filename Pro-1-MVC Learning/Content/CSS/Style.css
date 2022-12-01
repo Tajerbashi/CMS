@@ -572,3 +572,79 @@ a {
 #Submit-model-binding:hover {
     background: #210096;
 }
+/* Validation Form */
+#Validation-Container{
+    background: linear-gradient(90deg,#620096,#4900ff);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 #000;
+}
+#Validation-Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg,#ffffff31,#ffffff82);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 #000;
+    width: 40%;
+    color: white;
+}
+#Validation-Form > input {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    outline: none;
+}
+#Validation-Form > input:focus {
+    box-shadow: 0 0 10px 0 #000;
+}
+#validation-submit {
+    text-align: center;
+    cursor: pointer;
+    background: #5900ff;
+    color: white;
+    border: 1px solid #00000000;
+    border-radius: 0.5rem;
+}
+#validation-submit:hover {
+    cursor: pointer;
+    background: #320090;
+    transform: translateY(10px);
+}
+#validation-container-showdata {
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 #000;
+    background: linear-gradient(90deg,#3900ff,#320090);
+    padding: 1rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-collection-validation-data {
+    background: #eeeeeebc;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 #000;
+    margin-top: 1rem;
+}
+#validation-controller {
+    background: #0a0065d1;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 #000;
+}
+#validation-controller > a {
+    margin: 1rem;
+    background: #007aff;
+    color: #eee;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 #000;
+}
+#validation-controller > a:hover{
+    box-shadow: 0 0 10px 0 white;
+}

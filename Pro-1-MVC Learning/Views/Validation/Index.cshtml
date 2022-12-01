@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Home.cshtml";
+}
+
+<div>
+    <h1>This Is index Validation</h1>
+    <div id="validation-controller">
+        <a href="@Url.RouteUrl("ValidationRegisterForm")">RegisterForm</a>
+        <a href="@Url.RouteUrl("ValidatonShowData")">ShowData</a>
+    </div>
+    @RenderBody()
+</div>
