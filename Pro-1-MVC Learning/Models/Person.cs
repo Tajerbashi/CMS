@@ -11,18 +11,18 @@ namespace Pro_1_MVC_Learning.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage ="Name Error")]
-        [Display(Name="Name")]
+        [Display(Name="Name : ")]
         public String Name { get; set; }
 
         [Required(ErrorMessage = "Family Error")]
-        [Display(Name = "Family")]
+        [Display(Name = "Family : ")]
         public String Family { get; set; }
 
         [Required(ErrorMessage = "Age Error")]
         [Display(Name = "Age")]
         public byte Age { get; set; }
 
-        [Display(Name = "Active")]
+        [Display(Name = "Active : ")]
         public bool IsActive { get; set; }
 
     }

@@ -689,3 +689,7 @@ a {
     background: red;
     padding: 0.2rem 1rem;
 }
+.UD-control > a{
+    background: #0a0065d1;
+    padding: 0.5rem 1rem;
+}

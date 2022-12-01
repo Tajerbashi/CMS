@@ -34,5 +34,11 @@ namespace Pro_1_MVC_Learning.Controllers
         {
             return View(DB.People.ToList());
         }
+        public ActionResult Delete(int id)
+        {
+            DB.People.Remove(DB.People.Find(id));
+            DB.SaveChanges();
+            return RedirectToRoute("ValidatonShowData");
+        }
     }
 }

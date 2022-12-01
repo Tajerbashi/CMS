@@ -15,6 +15,9 @@
                 <p>Name : @item.Name</p>
                 <p>Family : @item.Family</p>
                 <p>Age : @item.Age</p>
+                <div class="UD-control">
+                    <a href="@Url.RouteUrl("ValidatonDelete",new {id=item.Id})">Delete</a>
+                </div>
             </div>
         }
     }
