@@ -22,6 +22,7 @@ namespace Pro_1_MVC_Learning.Controllers
         [HttpPost]
         public ActionResult Create(Person person)
         {
+            person.Validate(ModelState);
             if (!ModelState.IsValid)
             {
                 return View("RegisterForm", person);

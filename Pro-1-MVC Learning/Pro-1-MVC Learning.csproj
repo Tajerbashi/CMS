@@ -109,6 +109,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DB_Class.cs" />
+    <Compile Include="Models\IValidation.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
