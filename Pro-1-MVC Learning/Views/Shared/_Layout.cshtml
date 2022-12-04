@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/CSS/Style.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="header">
+        <ul id="header-list">
+            <li><a href="@Url.RouteUrl("HomeIndex")">Home</a></li>
+            <li><a href="@Url.RouteUrl("HomeNews")">News</a></li>
+            <li><a href="@Url.RouteUrl("HomeBlog")">Blog</a></li>
+            <li><a href="@Url.RouteUrl("HomeAbout")">About</a></li>
+            <li><a href="@Url.RouteUrl("HomePanel")">Panel</a></li>
+        </ul>
+    </div>
+    <div id="body">
+        @RenderBody()
+    </div>
+    <div id="footer">
+        Footer
+    </div>
+</body>
+</html>

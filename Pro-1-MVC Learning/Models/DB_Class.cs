@@ -9,9 +9,5 @@ namespace Pro_1_MVC_Learning.Models
     public class DB_Class:DbContext
     {
         public DB_Class():base("DB") { }
-        public DbSet<News> News { get; set; }
-        public DbSet<Person> People { get; set; }
-        public DbSet<Car> Cars { get; set; }
-        public DbSet<Teacher> Teachers { get; set; }
     }
 }

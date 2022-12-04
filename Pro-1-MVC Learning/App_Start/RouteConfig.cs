@@ -14,28 +14,21 @@ namespace Pro_1_MVC_Learning
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("Home", "", new { controller = "Home", action = "Index" });
-            routes.MapRoute("NewsIndex", "News/Index", new { controller = "News", action = "Index"});
-            routes.MapRoute("NewsInfo", "News/ShowNewsFromHome/{id}", new { controller = "News", action = "ShowNewsFromHome", id = UrlParameter.Optional });
-            routes.MapRoute("NewsCreate", "News/CreateNews", new { controller = "News", action = "CreateNews" });
-            routes.MapRoute("SubmitNews", "News/SubmitNews", new { controller = "News", action = "SubmitNews" });
-            routes.MapRoute("UpdateNews", "News/Update/{id}", new { controller = "News", action = "Update" });
-            routes.MapRoute("DeleteNews", "News/Delete/{id}", new { controller = "News", action = "Delete" });
 
-            routes.MapRoute("ModelIndex", "ModelIndex", new { controller = "ModelBinding", action = "Index" });
-            routes.MapRoute("ModelSubmit", "ModelSubmit", new { controller = "ModelBinding", action = "Submit" });
-            
-            //routes.MapRoute("ValidationIndex", "Validation/Index", new { controller = "Validation", action = "Index" });
-            routes.MapRoute("ValidationCreate", "Validation/Create", new { controller = "Validation", action = "Create" });
-            routes.MapRoute("ValidationRegisterForm", "Validation/RegisterForm", new { controller = "Validation", action = "RegisterForm" });
-            routes.MapRoute("ValidatonShowData", "Validation/ShowData", new { controller = "Validation", action = "ShowData" });
-            routes.MapRoute("ValidatonDelete", "Validation/Delete", new { controller = "Validation", action = "Delete" });
-            //  validationNext Route Configuration
-            routes.MapRoute("ValidationNext", "ValidationNext/{viewName}", new { controller = "ValidationNext", action = "Index", viewName="/" });
-            routes.MapRoute("ValidationNextCreate", "ValidationNext/Create", new { controller = "ValidationNext", action = "Create" });
-            routes.MapRoute("ValidationNextCheckName", "ValidationNext/CheckName", new { controller = "ValidationNext", action = "CheckName" });
-            routes.MapRoute("ValidationNextCreateTeacher", "ValidationNext/CreateTeacher", new { controller = "ValidationNext", action = "CreateTeacher" });
-            routes.MapRoute("ValidationNextCheckUser", "ValidationNext/CheckUser", new { controller = "ValidationNext", action = "CheckUser" });
+
+            routes.MapRoute("HomeIndex", "", new { controller = "Home", action = "Index" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("HomeNews", "News", new { controller = "Home", action = "News" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("HomeBlog", "Blogs", new { controller = "Home", action = "Blog" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("HomeAbout", "About", new { controller = "Home", action = "About" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("HomePanel", "Panel", new { controller = "Home", action = "Panel" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+            //    namespaces: new[] { "Pro_1_MVC_Learning.Controllers" }
+            //    );
+            //  Admin Area
         }
     }
 }
