@@ -3,16 +3,16 @@
 }
 <div id="Panel-Control">
     <div id="Panel-left-side">
-        <ul id="Panel-left-side-list">
-            <li class="panel-left-side-list-item"><a href="@Url.Action("Index","Home",new {area="Admin"})">Admin</a></li>
-            <li class="panel-left-side-list-item"><a href="#">UserStar</a></li>
-            <li class="panel-left-side-list-item"><a href="#">User</a></li>
-            <li class="panel-left-side-list-item"><a href="#">Blogs</a></li>
-            <li class="panel-left-side-list-item"><a href="#">News</a></li>
-            <li class="panel-left-side-list-item"><a href="#">Abouts</a></li>
-        </ul>
+        <div id="Panel-left-side-list">
+            <a href="@Url.Action("Index","Home",new {area="Admin"})">Admin</a>
+            <a href="#">UserStar</a>
+            <a href="#">User</a>
+            <a href="#">Blogs</a>
+            <a href="#">News</a>
+            <a href="#">Abouts</a>
+        </div>
     </div>
     <div id="Panel-right-side">
-        @RenderBody().WriteTo()
+        @RenderBody()
     </div>
 </div>

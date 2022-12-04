@@ -33,5 +33,9 @@ namespace Pro_1_MVC_Learning.Controllers
         {
             return View();
         }
+        public ActionResult Login()
+        {
+            return View();
+        }
     }
 }

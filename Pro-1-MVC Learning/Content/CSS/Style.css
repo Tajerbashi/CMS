@@ -4,7 +4,7 @@
 body{
     text-align: center;
 }
-#header, #footer {
+#header, #footer, #Panel-left-side, #Panel-right-side, #login-container {
     border-radius: 1rem;
     box-shadow: 0 0 10px 0 #000000;
 }
@@ -32,14 +32,106 @@ body{
 }
 /*   Panel Admin   */
 #Panel-Control{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
 }
-#Panel-left-side{
-
+#Panel-left-side {
+    width: 15%;
+    height: 500px;
+    background: linear-gradient(90deg,#3900ff,#00a9ff);
+    
 }
-#Panel-left-side-list{
-
+#Panel-left-side-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
 }
-.panel-left-side-list-item{
-
+#Panel-left-side-list > a {
+    margin: 0.2rem;
+    width: 70%;
+    padding: 0.5rem 1rem;
+    background: #002d8a;
+    border-radius: 0.5rem;
+    color: #ffffff;
+}
+#Panel-left-side-list > a:hover {
+    background: #037cff;
+    box-shadow: 0 0 10px 0 #ffffff;
+}
+#Panel-right-side {
+    width: 83%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#00a9ff,#3900ff);
+}
+#login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff66;
+    border: 1px solid #ffffff;
+    padding: 2rem;
+    width: 30%;
+    
+}
+#login-logo {
+    padding: 0.5rem 5rem;
+    background: #3900ff96;
+    color: #ffffff;
+    box-shadow: 0 0 10px 0 #ffffff;
+    border-radius: 0.5rem;
+    cursor: crosshair;
+}
+#login-control > form  {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#login-control > form > input  {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    outline: none;
+    margin: 0.5rem 1rem;
+}
+#login-submit{
+    background: #3900ff;
+    color: #ffffff;
+    cursor: pointer;
+}
+#login-submit:hover{
+    background: #150041;
+    transform: scale(1.1);
+}
+#login-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#login-button > a:first-child{
+    color: #150041;
+}
+#login-button > a:last-child{
+    color: #3900ff96;
+}
+#login-button > a:first-child:hover{
+    color: #ff9c00;
+    transform: scale(1.1);
+}
+#login-button > a:last-child:hover{
+    color: #ffffff;
+}
+#login-button > a{
+    color: #ffffff;
 }
