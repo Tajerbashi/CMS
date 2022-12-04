@@ -30,6 +30,10 @@ namespace Pro_1_MVC_Learning
             routes.MapRoute("ValidationRegisterForm", "Validation/RegisterForm", new { controller = "Validation", action = "RegisterForm" });
             routes.MapRoute("ValidatonShowData", "Validation/ShowData", new { controller = "Validation", action = "ShowData" });
             routes.MapRoute("ValidatonDelete", "Validation/Delete", new { controller = "Validation", action = "Delete" });
+            //  validationNext Route Configuration
+            routes.MapRoute("ValidationNext", "ValidationNext", new { controller = "ValidationNext", action = "Index" });
+            routes.MapRoute("ValidationNextCreate", "ValidationNext/Create", new { controller = "ValidationNext", action = "Create" });
+            routes.MapRoute("ValidationNextCheckName", "ValidationNext/CheckName", new { controller = "ValidationNext", action = "CheckName" });
         }
     }
 }
