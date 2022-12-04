@@ -693,28 +693,28 @@ a {
     background: #0a0065d1;
     padding: 0.5rem 1rem;
 }
-#VA-container{
+.VA-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-#VA-controller {
+.VA-controller {
     background: #007aff;
     padding: 1rem;
     box-shadow: 0 0 10px 0 #0a0065d1;
     border-radius: 1rem;
 }
-#VA-controller > a{
+.VA-controller > a{
     background: red;
     padding: 0.5rem 1rem;
     color: white;
     border-radius: 1rem;
 }
-#VA-controller > a:hover{
+.VA-controller > a:hover{
     background: #5c0000;
 }
-#VA-div-form {
+.VA-div-form {
     background: #5800ff;
     box-shadow: 0 0 10px 0 #0a0065d1;
     border-radius: 1rem;
@@ -732,7 +732,14 @@ a {
     align-items: center;
     padding: 1rem;
 }
-#VA-form > p > input{
+#VA-form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.VA-form > p > input{
     margin: 0.3rem;
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
