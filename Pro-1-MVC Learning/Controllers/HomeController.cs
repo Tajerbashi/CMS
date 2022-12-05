@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Pro_1_MVC_Learning.Controllers
 {
-    //[HandleError(View = "Error")]   //  Also some setting is changed in Web.config > goto > <system.web><customErrors mode="On" /></system.web>
+    [HandleError(View = "Error")]   //  Also some setting is changed in Web.config > goto > <system.web><customErrors mode="On" /></system.web>
     public class HomeController : Controller
     {
         // GET: Home
@@ -40,7 +40,7 @@ namespace Pro_1_MVC_Learning.Controllers
         }
         // GET: Index1
         //[OutputCache(Duration = 5)]
-        [HandleError(View = "Error")]   //  Also some setting is changed in Web.config > goto > <system.web><customErrors mode="On" /></system.web>
+        //[HandleError(View = "Error")]   //  Also some setting is changed in Web.config > goto > <system.web><customErrors mode="On" /></system.web>
         public ActionResult Index1()
         {
             throw new InvalidOperationException();
