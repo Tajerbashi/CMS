@@ -37,5 +37,11 @@ namespace Pro_1_MVC_Learning.Controllers
         {
             return View();
         }
+        // GET: Index1
+        [OutputCache(Duration = 5)]
+        public ActionResult Index1()
+        {
+            return View();
+        }
     }
 }

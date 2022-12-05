@@ -27,5 +27,21 @@ namespace Pro_1_MVC_Learning.Models.Function_Codes
             string decrypt = System.Text.Encoding.UTF8.GetString(System.Web.Security.MachineKey.Unprotect(Convert.FromBase64String(word), key));
             return decrypt;
         }
+        public static string Protect(this string input, params string[] keys)
+        {
+            var inputBytes= System.Text.Encoding.UTF8.GetBytes(input);
+            var encryptedBytes = System.Web.Security.MachineKey.Protect(inputBytes,keys);
+            return Convert.ToBase64String(encryptedBytes);
+        }
+        public static T Unprotect<T>(this string input, params string[] keys)
+        {
+            var encryptedBytes=Convert.FromBase64String(input);
+            var originalBytes = System.Web.Security.MachineKey.Unprotect(encryptedBytes,keys);
+            var originalText =System.Text.Encoding.UTF8.GetString(originalBytes);
+            var convertedValue=Convert.ChangeType(originalText,typeof(T));
+            return (T)convertedValue;
+
+
+        }
     }
 }

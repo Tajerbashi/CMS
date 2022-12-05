@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+    <style>
+        #clock{
+            margin: 1rem;
+            background: #ff6a00;
+            padding: 1rem;
+            box-shadow: 0 0 10px 0 #000000;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        #clock > h1 {
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <h1>@DateTime.Now.ToString("G")</h1>
+    </div>
+</body>
+</html>

@@ -15,6 +15,7 @@ namespace Pro_1_MVC_Learning
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute("HomeIndex", "", new { controller = "Home", action = "Index" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("HomeIndex1", "Index1", new { controller = "Home", action = "Index1" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
             routes.MapRoute("HomeNews", "News", new { controller = "Home", action = "News" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
             routes.MapRoute("HomeBlog", "Blogs", new { controller = "Home", action = "Blog" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
             routes.MapRoute("HomeAbout", "About", new { controller = "Home", action = "About" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
