@@ -1,6 +1,12 @@
-﻿@{
+﻿@model string
+@{
     Layout = "~/Views/Home/Panel.cshtml";
 }
-<h1>
-    Home Area Admin Page
-</h1>
+<div>
+    <form action="@Url.Action("Index","Home",new {area="Admin"})" method="post">
+        <input type="text" name="word" />
+        <input type="submit" name="submit" />
+    </form>
+    <p> Encode: @Model</p>
+    <p> Decode: @System.Text.Encoding.UTF8.GetString(System.Web.Security.MachineKey.Unprotect(Convert.FromBase64String(Model),"MyKey"))</p>
+</div>
