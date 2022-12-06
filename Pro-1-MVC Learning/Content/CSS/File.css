@@ -1,0 +1,53 @@
+﻿body {
+    text-align: center;
+}
+h1 {
+    margin: 1rem;
+    padding: 2rem;
+    background: #0013a8;
+    color: #ffffff;
+    box-shadow: 0 0 10px 0 #000000;
+    border-radius: 1rem;
+}
+a{
+    text-decoration: none;
+}
+#div1, #div2, #div3 {
+    box-shadow: 0 0 10px 0 #000000;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+#div1{
+    background: #ff6a00;
+}
+#div1 > a {
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    background: #001dff;
+    color: #ffffff;
+    border-radius: 0.5rem;
+}
+#div1 > a:hover {
+    background: #0013a8;
+}
+#div2 {
+    background: #ffc300;
+}
+#div2 > form{
+
+}
+#div2 > form > input{
+    padding: 0.5rem 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#div2 > form > input:hover{
+    background: #2dc700;
+    color: #ffffff;
+}
+#div3{
+    background: #001875;
+    color: #ffffff;
+}
