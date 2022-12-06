@@ -22,6 +22,7 @@ namespace Pro_1_MVC_Learning
             routes.MapRoute("HomePanel", "Panel", new { controller = "Home", action = "Panel" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
             routes.MapRoute("HomeLogin", "Login", new { controller = "Home", action = "Login" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
             routes.MapRoute("FileIndex", "FileIndex", new { controller = "File", action = "Index" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("FileDownload", "FileDownload", new { controller = "File", action = "Download" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
 
             //routes.MapRoute(
             //    name: "Default",
