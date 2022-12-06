@@ -9,18 +9,24 @@
 </head>
 <body>
     <h1>File Management</h1>
+
     <div id="div1">
-        <a href="@Url.RouteUrl("FileIndex")">Read File</a>
+        <a href="@Url.RouteUrl("FileRead")">Read File</a>
         <a href="@Url.RouteUrl("FileDownload")">Download File</a>
     </div>
+
     <div id="div2">
-        <form action="#" method="post">
-            <input type="file" />
-            <input type="submit" />
-        </form>
+        @using (Html.BeginForm("Upload", "File", FormMethod.Post, new { enctype="multipart/form-data" }))
+        {
+            <input type="file" name="file" />
+            <input type="submit" value="Upload File" />
+        }
     </div>
+
     <div id="div3">
        <p>@Model</p>
+       <p>@if (ViewBag.Message != null) { @ViewBag.Message } else { @("File Not Uploaded") }</p>
     </div>
+
 </body>
 </html>
