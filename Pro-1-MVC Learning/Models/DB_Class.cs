@@ -9,5 +9,10 @@ namespace Pro_1_MVC_Learning.Models
     public class DB_Class:DbContext
     {
         public DB_Class():base("DB") { }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(File.Map());
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

@@ -176,6 +176,7 @@
     <Compile Include="Microsoft\Web\Infrastructure\LogAttribute.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\DB_Class.cs" />
+    <Compile Include="Models\File.cs" />
     <Compile Include="Models\Function Codes\MachineKeys.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

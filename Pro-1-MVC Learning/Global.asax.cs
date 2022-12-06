@@ -1,3 +1,4 @@
+using Pro_1_MVC_Learning.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,12 @@ namespace Pro_1_MVC_Learning
     {
         protected void Application_Start()
         {
+
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            var DB = new DB_Class();
+            DB.Database.CreateIfNotExists();
         }
     }
 }
