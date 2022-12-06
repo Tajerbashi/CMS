@@ -50,4 +50,9 @@ a{
 #div3{
     background: #001875;
     color: #ffffff;
+    text-align: left;
+}
+.File-items {
+    background: #ffffff;
+    padding: 0.5rem 2rem;
 }

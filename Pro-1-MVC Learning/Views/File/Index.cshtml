@@ -1,4 +1,4 @@
-﻿@model String
+﻿@model List<String>
 <!DOCTYPE html>
 
 <html>
@@ -26,6 +26,10 @@
     <div id="div3">
        <p>@Model</p>
        <p>@if (ViewBag.Message != null) { @ViewBag.Message } else { @("File Not Uploaded") }</p>
+        @foreach (var item in Model ?? new List<string>())
+        {
+            <p>@(System.IO.Path.GetFileName(item)) <a class="File-items" href="@Url.RouteUrl("FileDownload",new { fileName=System.IO.Path.GetFileName(item)})">Download</a></p>
+        }
     </div>
 
 </body>
