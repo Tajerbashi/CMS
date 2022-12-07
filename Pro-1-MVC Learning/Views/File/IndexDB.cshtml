@@ -1,0 +1,56 @@
+﻿@model List<Pro_1_MVC_Learning.Models.Files>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/CSS/File.css" rel="stylesheet" />
+
+    <title>IndexDB</title>
+</head>
+<body>
+    <div id="container-File">
+        <h1>File DB Controller</h1>
+        @using (Html.BeginForm("UploadDB", "File", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <input type="file" name="file" />
+            <input type="submit" value="Upload File" />
+        }
+        <div id="List-Show">
+            <h1>All The Files in Database</h1>
+            @if (!Model.Any())
+            {
+                <p>DB is Empty</p>
+            }
+            else {
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>File Size</th>
+                            <th>Upload Date</th>
+                            <th>Download File</th>
+                            <th>Delete File</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.FileName</td>
+                                <td>@item.FielLength</td>
+                                <td>@item.UploadData.ToString("G")</td>
+                                <td><a href="@Url.RouteUrl("DownloadDB",new { Id=item.Id })" target="_blank">Download</a></td>
+                                <td><a href="@Url.RouteUrl("DeleteDB",new { Id=item.Id })">Delete</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                
+                
+            }
+        </div>
+    </div>
+    <hr />
+</body>
+</html>

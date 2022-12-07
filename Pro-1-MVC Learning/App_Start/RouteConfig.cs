@@ -25,6 +25,10 @@ namespace Pro_1_MVC_Learning
             routes.MapRoute("FileRead", "FileRead", new { controller = "File", action = "Read" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
             routes.MapRoute("FileDownload", "FileDownload", new { controller = "File", action = "Download" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
             routes.MapRoute("FileUpload", "FileUpload", new { controller = "File", action = "Upload" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("IndexDB", "IndexDB", new { controller = "File", action = "IndexDB" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("UploadDB", "UploadDB", new { controller = "File", action = "UploadDB" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("DownloadDB", "DownloadDB", new { controller = "File", action = "DownloadDB" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
+            routes.MapRoute("DeleteDB", "DeleteDB", new { controller = "File", action = "DeleteDB" }, namespaces: new[] { "Pro_1_MVC_Learning.Controllers" });
 
             //routes.MapRoute(
             //    name: "Default",

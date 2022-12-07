@@ -143,7 +143,6 @@
     <Content Include="Content\themes\base\tabs.css" />
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
-    <Content Include="Files\FileTest1.txt" />
     <Content Include="Global.asax" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
@@ -176,7 +175,7 @@
     <Compile Include="Microsoft\Web\Infrastructure\LogAttribute.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\DB_Class.cs" />
-    <Compile Include="Models\File.cs" />
+    <Compile Include="Models\Files.cs" />
     <Compile Include="Models\Function Codes\MachineKeys.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -195,6 +194,7 @@
     <Content Include="Views\Home\Index1.cshtml" />
     <Content Include="Views\Error.cshtml" />
     <Content Include="Views\File\Index.cshtml" />
+    <Content Include="Views\File\IndexDB.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -206,6 +206,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Files\" />
     <Folder Include="Image\" />
   </ItemGroup>
   <PropertyGroup>

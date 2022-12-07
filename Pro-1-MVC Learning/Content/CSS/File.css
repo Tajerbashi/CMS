@@ -12,7 +12,7 @@ h1 {
 a{
     text-decoration: none;
 }
-#div1, #div2, #div3 {
+#div1, #div2, #div3, #container-File, #table {
     box-shadow: 0 0 10px 0 #000000;
     margin: 1rem;
     padding: 2rem;
@@ -55,4 +55,54 @@ a{
 .File-items {
     background: #ffffff;
     padding: 0.5rem 2rem;
+}
+#container-File{
+    background: #835cd7;
+    padding: 2rem;
+    margin: 1rem;
+}
+#container-File > form{
+    padding: 2rem;
+    margin: 1rem;
+}
+#container-File > form input{
+    padding: 0.5rem 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#container-File > form > input:hover {
+    background: #000dff;
+    color: #ffffff;
+}
+#List-Show > h1{
+    background: #6000ff;
+
+}
+#table{
+    width: 100%;
+    background: #ff6d00;
+    color: #ffffff;
+}
+
+#table > thead > tr{
+    height: 40px !important;
+    background: #001875;
+}
+
+
+#table > tbody > tr{
+    height: 40px !important;
+    background: #0072ff;
+    cursor: pointer;
+}
+a{
+    color: #ffffff;
+}
+a:hover {
+    color: #ff6a00;
+}
+#table > tbody > tr:hover{
+    background: #0026db;
+    color: #ffffff !important;
 }

@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Pro_1_MVC_Learning.Models
 {
-    public class File
+    public class Files
     {
         public Guid Id { get; set; }
         public string FileName { get; set; }
@@ -15,9 +15,9 @@ namespace Pro_1_MVC_Learning.Models
         public string FileHash { get; set; }
         public DateTime UploadData { get; set; }
 
-        public static EntityTypeConfiguration<File> Map()
+        public static EntityTypeConfiguration<Files> Map()
         {
-            var map= new EntityTypeConfiguration<File>();
+            var map= new EntityTypeConfiguration<Files>();
 
             map.Property(m => m.FileName).HasMaxLength(200).IsRequired();
             map.Property(m => m.ContentType).HasMaxLength(200);
