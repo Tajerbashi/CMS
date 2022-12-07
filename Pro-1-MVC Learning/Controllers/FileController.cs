@@ -69,7 +69,6 @@ namespace Pro_1_MVC_Learning.Controllers
         DB_Class DB =new DB_Class();
         public ActionResult IndexDB()
         {
-            
             return View(DB.Files.OrderBy(i => i.FileName).ToList());
         }
         [HttpPost]
