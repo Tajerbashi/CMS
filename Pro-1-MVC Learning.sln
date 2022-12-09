@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pro-1-MVC Learning", "Pro-1-MVC Learning\Pro-1-MVC Learning.csproj", "{9C11C256-F7FA-49D7-98F2-5F1BB8DA279E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{9B8B04AC-032A-4739-A17A-96C398EAB1D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9C11C256-F7FA-49D7-98F2-5F1BB8DA279E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C11C256-F7FA-49D7-98F2-5F1BB8DA279E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C11C256-F7FA-49D7-98F2-5F1BB8DA279E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8B04AC-032A-4739-A17A-96C398EAB1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8B04AC-032A-4739-A17A-96C398EAB1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8B04AC-032A-4739-A17A-96C398EAB1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8B04AC-032A-4739-A17A-96C398EAB1D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

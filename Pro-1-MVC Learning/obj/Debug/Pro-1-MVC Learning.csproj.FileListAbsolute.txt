@@ -58,3 +58,6 @@ C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Le
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\obj\Debug\Pro-1-MVC Learning.csproj.CopyComplete
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\obj\Debug\Pro-1-MVC Learning.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\obj\Debug\Pro-1-MVC Learning.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\DAL.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\DAL.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\Pro-1-MVC Learning\bin\DAL.dll.config

@@ -15,9 +15,6 @@ namespace Pro_1_MVC_Learning
 
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-
-            var DB = new DB_Class();
-            DB.Database.CreateIfNotExists();
         }
     }
 }

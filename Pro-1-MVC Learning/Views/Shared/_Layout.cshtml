@@ -3,23 +3,31 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link href="~/Content/CSS/Style.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
     <title>Index</title>
 </head>
 <body>
-    <div id="header">
-        <ul id="header-list">
-            <li><a href="@Url.RouteUrl("HomeIndex")">Home</a></li>
-            <li><a href="@Url.RouteUrl("HomeNews")">News</a></li>
-            <li><a href="@Url.RouteUrl("HomeBlog")">Blog</a></li>
-            <li><a href="@Url.RouteUrl("HomeAbout")">About</a></li>
-            <li><a href="@Url.RouteUrl("HomeLogin")">Panel</a></li>
-        </ul>
+    <div id="header-container">
+        <h1>
+            نرم افزار مدیریت محتوا و نرم افزار
+        </h1>
     </div>
-    <div id="body">
-        @RenderBody()
+    <div id="nav-container">
+        Nav
     </div>
-    <div id="footer">
+    <div id="section-container">
+        <div id="asid-container">
+            <div id="asid-list">
+                <a class="asid-list-item" href="@Url.RouteUrl("IndexHome")">خانه</a>
+                <a class="asid-list-item" href="@Url.RouteUrl("IndexProducts")">محصولات</a>
+                <a class="asid-list-item" href="@Url.RouteUrl("IndexNews")">اخبار</a>
+            </div>
+        </div>
+        <div id="body-container">
+            @RenderBody()
+        </div>
+    </div>
+    <div id="footer-container">
         Footer
     </div>
 </body>

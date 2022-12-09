@@ -13,30 +13,13 @@ namespace Pro_1_MVC_Learning.Controllers
         {
             return View();
         }
-        // GET: News
+        public ActionResult Products()
+        {
+            return View();
+        }
         public ActionResult News()
         {
             return View();
         }
-        // GET: Blog
-        public ActionResult Blog()
-        {
-            return View();
-        }
-        // GET: About
-        public ActionResult About()
-        {
-            return View();
-        }
-        // GET: Panel
-        public ActionResult Panel()
-        {
-            return View();
-        }
-        public ActionResult Login()
-        {
-            return View();
-        }
-        
     }
 }
