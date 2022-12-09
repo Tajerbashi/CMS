@@ -6,7 +6,7 @@
 #header-container, #nav-container, #asid-container, #body-container, #footer-container {
     box-shadow: 0 0 10px 0 #000000;
     border-radius: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 a{
     text-decoration: none;
@@ -23,21 +23,20 @@ a{
     padding: 1rem;
     background: linear-gradient(90deg,#5100ff,#0092ff);
 }
+#header-nav-input {
+    background: #ffffff35 !important;
+    color: #ffffff;
+}
+#header-nav-input::placeholder{
+    color: #ffffffa3;
+}
 /*  Nav Styles Ended    */
-
 /*  Section Styles Started    */
+
 #section-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 1000px;
-    margin-top: 1rem;
     color: #ffffff;
 }
 #asid-container {
-    width: 19%;
-    height: 100%;
     background: linear-gradient(180deg,#0092ff,#3451ff);
 }
 #asid-list {
@@ -60,15 +59,14 @@ a{
 .asid-list-item:hover {
     background: #007aff;
     box-shadow: 0 0 10px 0 #ffffff;
+    color: #ffffff;
 }
 #body-container {
-    width: 80%;
-    height: 100%;
     background: linear-gradient(180deg,#0092ff,#3451ff);
 }
 #footer-container {
-    background: linear-gradient(180deg,#0092ff,#3451ff);
-    margin-top: 1rem;
+    background: linear-gradient(180deg,#000000,#3451ff);
     padding: 1rem;
     height: 200px;
 }
+

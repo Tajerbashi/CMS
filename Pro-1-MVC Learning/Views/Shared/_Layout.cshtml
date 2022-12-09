@@ -3,6 +3,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/css/style.css" rel="stylesheet" />
     <title>Index</title>
 </head>
@@ -13,22 +15,52 @@
         </h1>
     </div>
     <div id="nav-container">
-        Nav
+        <header class="p-3 text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-warning">خانه</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">قابلیت</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">قیمت</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">توضیحات</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">درباره ما</a></li>
+                    </ul>
+
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control" placeholder="جستجو ..." id="header-nav-input" aria-label="Search">
+                    </form>
+
+                    <div class="text-end">
+                        <button type="button" class="btn btn-outline-light">ورود</button>
+                        <button type="button" class="btn btn-warning">ثبت نام</button>
+                    </div>
+                </div>
+            </div>
+        </header>
     </div>
-    <div id="section-container">
-        <div id="asid-container">
-            <div id="asid-list">
-                <a class="asid-list-item" href="@Url.RouteUrl("IndexHome")">خانه</a>
-                <a class="asid-list-item" href="@Url.RouteUrl("IndexProducts")">محصولات</a>
-                <a class="asid-list-item" href="@Url.RouteUrl("IndexNews")">اخبار</a>
+    
+    <div class="container-fluid" id="section-container">
+        <div class="row justify-content-around">
+            <div class="col-sm-12 col-lg-3" id="asid-container">
+                <div id="asid-list">
+                    <a class="asid-list-item" href="@Url.Action("Index","Home")">خانه</a>
+                    <a class="asid-list-item" href="@Url.Action("Products","Home")">محصولات</a>
+                    <a class="asid-list-item" href="@Url.Action("News","Home")">اخبار</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-8" id="body-container">
+                @RenderBody()
             </div>
         </div>
-        <div id="body-container">
-            @RenderBody()
-        </div>
     </div>
+
     <div id="footer-container">
         Footer
     </div>
+    <script src="~/Scripts/jquery-3.6.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
+
 </body>
 </html>
