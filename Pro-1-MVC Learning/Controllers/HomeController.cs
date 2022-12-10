@@ -15,8 +15,8 @@ namespace Pro_1_MVC_Learning.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
-        }
+            return View(new User());
+        }        
         public ActionResult Products()
         {
             return View();
@@ -32,18 +32,13 @@ namespace Pro_1_MVC_Learning.Controllers
         [HttpPost]
         public ActionResult CreateUser(User user)
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid || !user.Password.Equals(user.PasswordSlat))
             {
-                ViewBag.isLogin = false;
-                return RedirectToAction("Index");
+                return View("Index", user);
             }
-            if (user.Password.Equals(user.PasswordSlat))
-            {
-                contexts.Users.Add(user);
-                contexts.SaveChanges();
-            }
-            ViewBag.isLogin = true;
-            return RedirectToAction("Index");
+            contexts.Users.Add(user);
+            contexts.SaveChanges();
+            return View("Index", user);
         }
         public JsonResult CheckValidation(string Word) {
             if (contexts.Users.Where(c => c.Username==Word || c.Phone==Word || c.Username==Word).FirstOrDefault() != null)
