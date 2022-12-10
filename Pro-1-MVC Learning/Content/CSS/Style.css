@@ -1,72 +1,63 @@
-﻿body {
+﻿
+a {
+    text-decoration: none;
+}
+body {
     direction: rtl;
     text-align: center;
     color: #ffffff;
 }
-#header-container, #nav-container, #asid-container, #body-container, #footer-container {
+#header-container,
+#nav-container,
+#asid-container,
+#body-container,
+#footer-container{
     box-shadow: 0 0 10px 0 #000000;
     border-radius: 1rem;
-    margin-top: 1rem;
 }
-a{
-    text-decoration: none;
-}
-/*  Header Styles Started   */
 #header-container {
-    padding: 1rem;
-    background: linear-gradient(90deg,#5100ff,#0092ff);
+    background: linear-gradient(90deg, #5592ff, #ad6dff);
 }
-/*  Header Styles Ended */
-
-/*  Nav Styles Started    */
 #nav-container {
-    padding: 1rem;
-    background: linear-gradient(90deg,#5100ff,#0092ff);
+    background: linear-gradient(90deg, #5592ff, #ad6dff);
 }
-#header-nav-input {
-    background: #ffffff35 !important;
-    color: #ffffff;
+.nav-items{
+    margin-right:0.5rem;
 }
-#header-nav-input::placeholder{
-    color: #ffffffa3;
+.nav-items:hover {
+    cursor: pointer;
+    color: #000000 !important;
 }
-/*  Nav Styles Ended    */
-/*  Section Styles Started    */
+#nav-search{
+    background: #ffffff86;
+}
 
-#section-container {
-    color: #ffffff;
+
+#section-container{
+
 }
 #asid-container {
-    background: linear-gradient(180deg,#0092ff,#3451ff);
-}
-#asid-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    background: linear-gradient(90deg, #5592ff, #ad6dff);
 }
 .asid-list-item{
-    color: #ffffff;
-    font-size: 1.2rem;
-    background: #4732ff99;
-    width: 60%;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
-    box-shadow: 0 0 5px 0 #000000;
+    background: #ffffff;
     border-radius: 0.5rem;
+    font-size: 1.1rem;
 }
 .asid-list-item:hover {
-    background: #007aff;
-    box-shadow: 0 0 10px 0 #ffffff;
+    background: #baa6ff50;
+    border-radius: 0.5rem;
     color: #ffffff;
+    border: 1px solid #ffffff49;
+    box-shadow: 0 0 10px 0 #ffffff48;
 }
 #body-container {
-    background: linear-gradient(180deg,#0092ff,#3451ff);
+    background: linear-gradient(90deg, #5592ff, #ad6dff);
+    min-height: 500px;
 }
 #footer-container {
-    background: linear-gradient(180deg,#000000,#3451ff);
-    padding: 1rem;
-    height: 200px;
+    background: linear-gradient(90deg, #5592ff, #ad6dff);
+    min-height: 250px;
 }
-

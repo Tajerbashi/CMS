@@ -9,52 +9,59 @@
     <title>Index</title>
 </head>
 <body>
-    <div id="header-container">
-        <h1>
-            نرم افزار مدیریت محتوا و نرم افزار
-        </h1>
-    </div>
-    <div id="nav-container">
-        <header class="p-3 text-white">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2 text-warning">خانه</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">قابلیت</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">قیمت</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">توضیحات</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">درباره ما</a></li>
-                    </ul>
+    <header>
+        <div id="header-container" class="m-3 p-3">
+            <h1>
+                نرم افزار مدیریت محتوا و نرم افزار
+            </h1>
+        </div>
+    </header>
 
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input type="search" class="form-control" placeholder="جستجو ..." id="header-nav-input" aria-label="Search">
+    <nav>
+        <div class="container-fluid">
+            <div id="nav-container" class="row d-flex flex-row align-items-center justify-content-between p-3 m-3">
+                <ul class="nav col-lg-auto justify-content-center">
+                    <li><a href="#" class="nav-link px-2 text-warning nav-items">خانه</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white nav-items">قابلیت</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white nav-items">قیمت</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white nav-items">توضیحات</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white nav-items">درباره ما</a></li>
+                </ul>
+
+                <div class="d-flex flex-row nav col-lg-auto justify-content-center">
+                    <form class="m-3">
+                        <input type="search" class="form-control" id="nav-search" placeholder="جستجو ..." id="header-nav-input" aria-label="Search">
                     </form>
 
-                    <div class="text-end">
-                        <button type="button" class="btn btn-outline-light">ورود</button>
-                        <button type="button" class="btn btn-warning">ثبت نام</button>
+                    <div class="text-end m-3">
+                        <a href="@Url.Action()" class="btn btn-outline-light">ورود</a>
+                        <a href="@Url.Action("RegisterUser","Home")" class="btn btn-warning">ثبت نام</a>
                     </div>
                 </div>
             </div>
-        </header>
-    </div>
+        </div>
+    </nav>
     
-    <div class="container-fluid" id="section-container">
-        <div class="row justify-content-around">
-            <div class="col-sm-12 col-lg-3" id="asid-container">
-                <div id="asid-list">
-                    <a class="asid-list-item" href="@Url.Action("Index","Home")">خانه</a>
-                    <a class="asid-list-item" href="@Url.Action("Products","Home")">محصولات</a>
-                    <a class="asid-list-item" href="@Url.Action("News","Home")">اخبار</a>
+    <section>
+        <div class="container-fluid">
+            <div class="row m-3 d-flex flex-sm-column flex-md-row" id="section-container">
+                <div class="col-sm-12 col-lg-2 mb-sm-3" id="asid-container">
+                    <div id="asid-list" class="p-3 d-flex flex-md-row flex-md-wrap flex-lg-column" >
+                        <a class="asid-list-item" href="@Url.Action("Index","Home")">خانه</a>
+                        <a class="asid-list-item" href="@Url.Action("Products","Home")">محصولات</a>
+                        <a class="asid-list-item" href="@Url.Action("News","Home")">اخبار</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-10" >
+                    <div id="body-container">
+                        @RenderBody()
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-8" id="body-container">
-                @RenderBody()
-            </div>
         </div>
-    </div>
+    </section>
 
-    <div id="footer-container">
+    <div id="footer-container" class="mt-5">
         Footer
     </div>
     <script src="~/Scripts/jquery-3.6.1.min.js"></script>
