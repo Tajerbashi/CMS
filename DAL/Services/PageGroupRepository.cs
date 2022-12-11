@@ -52,6 +52,11 @@ namespace DAL.Services
             }
         }
 
+        public void Dispose()
+        {
+            DB.Dispose();
+        }
+
         public IEnumerable<PageGroup> GetAllGroup()
         {
             return DB.PageGroups;

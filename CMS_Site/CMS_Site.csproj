@@ -124,6 +124,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\PageGroupsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -156,6 +158,14 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\PageGroups\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\PageGroups\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\PageGroups\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\PageGroups\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\PageGroups\Index.cshtml" />
     <None Include="Scripts\jquery-3.6.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.1.js" />
     <Content Include="Scripts\jquery-3.6.1.min.js" />
@@ -184,6 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +223,12 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.6.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{d4ce0fd1-612b-4a21-aef2-2d7946999619}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

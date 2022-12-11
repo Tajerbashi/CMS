@@ -141,3 +141,6 @@ C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\obj\Deb
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\obj\Debug\CMS_Site.csproj.CopyComplete
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\obj\Debug\CMS_Site.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\obj\Debug\CMS_Site.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.dll.config

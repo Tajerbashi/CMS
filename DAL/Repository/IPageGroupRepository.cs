@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
-    public interface IPageGroupRepository
+    public interface IPageGroupRepository:IDisposable
     {
         IEnumerable<PageGroup> GetAllGroup();
         PageGroup GetGroupId(int Id);
