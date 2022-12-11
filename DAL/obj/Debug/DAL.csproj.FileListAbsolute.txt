@@ -1,25 +1,14 @@
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\DAL.dll.config
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\DAL.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\DAL.pdb
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\EntityFramework.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\EntityFramework.xml
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\obj\Debug\DAL.csproj.CopyComplete
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\obj\Debug\DAL.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\obj\Debug\DAL.pdb
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.Helpers.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.Mvc.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.Razor.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.WebPages.Deployment.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.WebPages.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.WebPages.Razor.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.Helpers.xml
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.Mvc.xml
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.Razor.xml
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.WebPages.xml
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.WebPages.Deployment.xml
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-MVC Learning\DAL\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\DAL.dll.config
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\DAL.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\DAL.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.Migrations.Initial_DB.resources
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
