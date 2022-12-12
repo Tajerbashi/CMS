@@ -3,27 +3,59 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/CSS/Admin.css" rel="stylesheet" />
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/Script/modernizr")
 </head>
-<body class="text-center">
-    <header class="bg-dark text-light m-3 p-5 rounded">
-        <h1>Header</h1>
+<body>
+    <header class="m-2 shadow p-3 bg-dark rounded-pill">
+        <div id="header">
+            <a class="btn bg-success text-light" href="#">Publish</a>
+            <a class="btn bg-danger text-light" href="#">Exit</a>
+        </div>
     </header>
 
-    <section class="bg-warning text-danger m-3 p-5 rounded d-flex flex-column justify-content-center align-items-center">
-        @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-        @RenderBody()
-    </section>
+    <div class="container-fluid" id="section">
+        <div class="row">
+            <aside class="d-flex flex-sm-row flex-md-column shadow col-sm-12 col-md-2 p-3 bg-primary">
+                <div>
+                    <img class="img-fluid shadow rounded-5" id="pro-pic" src="~/Image/P (1).jpg" />
+                    <p class="card-title bg-white mt-3 shadow">Profile</p>
+                </div>
+                <div>
+                    <a class="btn aside_btn" id="Personal" href="#">Personal</a>
+                    <a class="btn aside_btn" id="Group" href="">Group Page</a>
+                    <a class="btn aside_btn" id="Page" href="">Page</a>
+                    <a class="btn aside_btn" id="Comment" href="">Page Comments</a>
+                </div>
+            </aside>
+            <section class="col-sm-12 col-md-10 p-3 bg-primary bg-gradient ">
+                <div>
+                    @RenderBody()
+                </div>
+            </section>
+        </div>
+    </div>
 
+    <div class="p-3" id="show-data">
+        <nav class="bg-dark text-light p-2">Search</nav>
+        <table class="table table-hover bg-secondary text-light p-2 mt-3">
+            <thead id="tHead">
 
-    <footer class="bg-dark text-light m-3 p-5 rounded">
-        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-    </footer>
+            </thead>
+            <tbody id="tBody">
+            </tbody>
+        </table>
+    </div>
 
-    @Scripts.Render("~/Script/jquery")
-    @Scripts.Render("~/Script/bootstrap")
-    @RenderSection("scripts", required: false)
+    <!-- Modal -->
+    
+    <!-- End Modal -->
+    <script src="~/Scripts/jquery-3.6.1.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
+    <script src="~/Scripts/js/AdminScripts.js" defer></script>
 </body>
 </html>

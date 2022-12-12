@@ -26,7 +26,11 @@ namespace CMS_Site.Areas.Admin.Controllers
         {
             return View(pageGroupRepository.GetAllGroup());
         }
-
+        // GET: Admin/GetAll
+        public ActionResult GetAll()
+        {
+            return (ActionResult)pageGroupRepository.GetAllGroup();
+        }
         // GET: Admin/PageGroups/Details/5
         public ActionResult Details(int? id)
         {

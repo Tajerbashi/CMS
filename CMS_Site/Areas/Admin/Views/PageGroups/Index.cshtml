@@ -3,13 +3,8 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+<button class="btn btn-light" id="Open-Modal">Create Group</button>
+<table class="table" id="G-table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.GroupTitle)
@@ -17,17 +12,19 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.GroupTitle)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GroupId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GroupId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GroupId })
-        </td>
-    </tr>
-}
-
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupTitle)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.GroupId }, new { @class = "btn btn-info" })
+                @Html.ActionLink("Details", "Details", new { id = item.GroupId }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Delete", "Delete", new { id = item.GroupId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
 </table>
+
+
