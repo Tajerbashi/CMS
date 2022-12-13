@@ -11,7 +11,11 @@ namespace DAL.Services
 {
     public class PageGroupRepository : IPageGroupRepository
     {
-        DBContextsModels DB= new DBContextsModels();
+        DBContextsModels DB;
+        public PageGroupRepository(DBContextsModels db)
+        {
+            this.DB= db;
+        }
         public bool CreateGroup(PageGroup pageGroup)
         {
             try

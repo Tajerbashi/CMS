@@ -11,7 +11,11 @@ namespace DAL.Services
 {
     public class PageCommentRepository : IPageComment
     {
-        DBContextsModels DB = new DBContextsModels();
+        DBContextsModels DB;
+        public PageCommentRepository(DBContextsModels db)
+        {
+            this.DB = db;
+        }
         public bool CreatePageComment(PageComment comment)
         {
             try

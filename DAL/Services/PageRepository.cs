@@ -11,7 +11,11 @@ namespace DAL.Services
 {
     public class PageRepository:IPageRepository
     {
-        DBContextsModels DB = new DBContextsModels();
+        DBContextsModels DB;
+        public PageRepository(DBContextsModels db)
+        {
+            this.DB = db;
+        }
         public bool CreatePage(Page page)
         {
             try

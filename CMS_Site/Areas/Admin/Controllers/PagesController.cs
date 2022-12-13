@@ -8,121 +8,116 @@ using System.Web;
 using System.Web.Mvc;
 using DAL;
 using DAL.Models;
-using DAL.Repository;
-using DAL.Services;
 
 namespace CMS_Site.Areas.Admin.Controllers
 {
-    public class PageGroupsController : Controller
+    public class PagesController : Controller
     {
-        public IPageGroupRepository pageGroupRepository;
-        DBContextsModels DB=new DBContextsModels();
+        private DBContextsModels db = new DBContextsModels();
 
-        public PageGroupsController()
-        {
-            pageGroupRepository = new PageGroupRepository(DB);
-        }
-        // GET: Admin/PageGroups
+        // GET: Admin/Pages
         public ActionResult Index()
         {
-            return View(pageGroupRepository.GetAllGroup());
+            var pages = db.Pages.Include(p => p.PageGroup);
+            return View(pages.ToList());
         }
-        // GET: Admin/GetAll
-        public ActionResult GetAll()
-        {
-            return (ActionResult)pageGroupRepository.GetAllGroup();
-        }
-        // GET: Admin/PageGroups/Details/5
+
+        // GET: Admin/Pages/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PageGroup pageGroup = pageGroupRepository.GetGroupId(id.Value);
-            if (pageGroup == null)
+            Page page = db.Pages.Find(id);
+            if (page == null)
             {
                 return HttpNotFound();
             }
-            return PartialView(pageGroup);
+            return View(page);
         }
 
-        // GET: Admin/PageGroups/Create
+        // GET: Admin/Pages/Create
         public ActionResult Create()
         {
-            return PartialView();
+            ViewBag.GroupID = new SelectList(db.PageGroups, "GroupId", "GroupTitle");
+            return View();
         }
 
-        // POST: Admin/PageGroups/Create
+        // POST: Admin/Pages/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GroupId,GroupTitle")] PageGroup pageGroup)
+        public ActionResult Create([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime")] Page page)
         {
             if (ModelState.IsValid)
             {
-                pageGroupRepository.CreateGroup(pageGroup);
-                pageGroupRepository.Save();
+                db.Pages.Add(page);
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(pageGroup);
+            ViewBag.GroupID = new SelectList(db.PageGroups, "GroupId", "GroupTitle", page.GroupID);
+            return View(page);
         }
 
-        // GET: Admin/PageGroups/Edit/5
+        // GET: Admin/Pages/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PageGroup pageGroup = pageGroupRepository.GetGroupId(id.Value);
-            if (pageGroup == null)
+            Page page = db.Pages.Find(id);
+            if (page == null)
             {
                 return HttpNotFound();
             }
-            return PartialView(pageGroup);
+            ViewBag.GroupID = new SelectList(db.PageGroups, "GroupId", "GroupTitle", page.GroupID);
+            return View(page);
         }
 
-        // POST: Admin/PageGroups/Edit/5
+        // POST: Admin/Pages/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GroupId,GroupTitle")] PageGroup pageGroup)
+        public ActionResult Edit([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime")] Page page)
         {
             if (ModelState.IsValid)
             {
-                pageGroupRepository.UpdateGroup(pageGroup);
-                pageGroupRepository.Save();
+                db.Entry(page).State = EntityState.Modified;
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(pageGroup);
+            ViewBag.GroupID = new SelectList(db.PageGroups, "GroupId", "GroupTitle", page.GroupID);
+            return View(page);
         }
 
-        // GET: Admin/PageGroups/Delete/5
+        // GET: Admin/Pages/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            PageGroup pageGroup = pageGroupRepository.GetGroupId(id.Value);
-            if (pageGroup == null)
+            Page page = db.Pages.Find(id);
+            if (page == null)
             {
                 return HttpNotFound();
             }
-            return PartialView(pageGroup);
+            return View(page);
         }
 
-        // POST: Admin/PageGroups/Delete/5
+        // POST: Admin/Pages/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            pageGroupRepository.DeleteGroup(id);
-            pageGroupRepository.Save();
+            Page page = db.Pages.Find(id);
+            db.Pages.Remove(page);
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
 
@@ -130,8 +125,7 @@ namespace CMS_Site.Areas.Admin.Controllers
         {
             if (disposing)
             {
-                pageGroupRepository.Dispose();
-                DB.Dispose();
+                db.Dispose();
             }
             base.Dispose(disposing);
         }
