@@ -43,13 +43,13 @@ namespace CMS_Site.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            return View(pageGroup);
+            return PartialView(pageGroup);
         }
 
         // GET: Admin/PageGroups/Create
         public ActionResult Create()
         {
-            return View();
+            return PartialView();
         }
 
         // POST: Admin/PageGroups/Create
@@ -81,7 +81,7 @@ namespace CMS_Site.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            return View(pageGroup);
+            return PartialView(pageGroup);
         }
 
         // POST: Admin/PageGroups/Edit/5
@@ -112,7 +112,7 @@ namespace CMS_Site.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
-            return View(pageGroup);
+            return PartialView(pageGroup);
         }
 
         // POST: Admin/PageGroups/Delete/5

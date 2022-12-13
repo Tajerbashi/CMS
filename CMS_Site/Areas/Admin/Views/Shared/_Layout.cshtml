@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/CSS/modal.css" rel="stylesheet" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/CSS/Admin.css" rel="stylesheet" />
     <title>@ViewBag.Title - My ASP.NET Application</title>
@@ -48,14 +49,31 @@
         </table>
     </div>
 
-    <!-- Modal -->
-    
+    <!-- Modal content -->
+    <div id="modal-shadow">
+        <div id="modal-tab">
+
+            <div id="modal-header">
+                <p id="modal-title">Title</p>
+                <span id="close-X">&times;</span>
+            </div>
+
+            <div id="modal-body">
+                body
+            </div>
+
+            <div id="modal-footer">
+            </div>
+
+        </div>
+    </div>
     <!-- End Modal -->
     <script src="~/Scripts/jquery-3.6.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
     <script src="~/Scripts/jquery.validate.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
-    <script src="~/Scripts/bootstrap.js"></script>
-    <script src="~/Scripts/bootstrap.bundle.js"></script>
     <script src="~/Scripts/js/AdminScripts.js" defer></script>
+    <script src="~/Scripts/js/modal.js"></script>
 </body>
 </html>

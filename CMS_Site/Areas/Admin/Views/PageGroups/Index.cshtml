@@ -3,7 +3,9 @@
 @{
     ViewBag.Title = "Index";
 }
-<button class="btn btn-light" id="Open-Modal">Create Group</button>
+
+<button id="Create-modal" class="btn btn-light ">Create</button>
+
 <table class="table" id="G-table">
     <tr>
         <th>
@@ -17,11 +19,18 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.GroupTitle)
+
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.GroupId }, new { @class = "btn btn-info" })
-                @Html.ActionLink("Details", "Details", new { id = item.GroupId }, new { @class = "btn btn-warning" })
-                @Html.ActionLink("Delete", "Delete", new { id = item.GroupId }, new { @class = "btn btn-danger" })
+                <a class="btn btn-warning" onclick="EditGroup(@item.GroupId)">
+                    Edit<i c class="glyphicon glyphicon-edit"></i>
+                </a>
+                <a class="btn btn-info" onclick="DetailsGroup(@item.GroupId)">
+                    Details<i c class="glyphicon glyphicon-edit"></i>
+                </a>
+                <a class="btn btn-danger" onclick="DeleteGroup(@item.GroupId)">
+                    Delete<i c class="glyphicon glyphicon-edit"></i>
+                </a>
             </td>
         </tr>
     }
