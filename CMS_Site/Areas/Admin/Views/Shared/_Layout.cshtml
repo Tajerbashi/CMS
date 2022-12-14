@@ -24,10 +24,10 @@
                     <p class="card-title bg-white mt-3 shadow">Profile</p>
                 </div>
                 <div>
-                    <a class="btn aside_btn" id="Personal" href="#">Personal</a>
-                    <a class="btn aside_btn" id="Group" href="">Group Page</a>
-                    <a class="btn aside_btn" id="Page" href="">Page</a>
-                    <a class="btn aside_btn" id="Comment" href="">Page Comments</a>
+                    <a class="btn aside_btn" href="#">Personal</a>
+                    <a class="btn aside_btn" href="/Admin/PageGroups/Index">Group Page</a>
+                    <a class="btn aside_btn" href="@Url.Action("Index","Pages")">Page</a>
+                    <a class="btn aside_btn" href="@Url.Action("Index","Admin/PageGroups")">Page Comments</a>
                 </div>
             </aside>
             <section class="col-sm-12 col-md-10 p-3 bg-primary bg-gradient ">
@@ -36,17 +36,6 @@
                 </div>
             </section>
         </div>
-    </div>
-
-    <div class="p-3" id="show-data">
-        <nav class="bg-dark text-light p-2">Search</nav>
-        <table class="table table-hover bg-secondary text-light p-2 mt-3">
-            <thead id="tHead">
-
-            </thead>
-            <tbody id="tBody">
-            </tbody>
-        </table>
     </div>
 
     <!-- Modal content -->
