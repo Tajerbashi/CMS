@@ -4,29 +4,6 @@
     }
 });
 
-$("#Personal").click(() => {
-    $("#show-data").addClass("d-none");
-});
-
-$("#Group").click((event) => {
-    event.preventDefault();
-    $("#show-data").removeClass("d-none");
-    $("#tHead").html("<tr><th>Groups</th><th>Remotes</th></tr>");
-
-});
-
-$("#Page").click(() => {
-    event.preventDefault();
-    $("#show-data").removeClass("d-none");
-    $("#tHead").html("<tr><th>Groups</th><th>Title</th><th>Description</th><th>Text</th><th>Visits</th><th>CreateTime</th><th>Remotes</th></tr>");
-});
-
-$("#Comment").click(() => {
-    event.preventDefault();
-    $("#show-data").removeClass("d-none");
-    $("#tHead").html("<tr><th>Groups</th><th>Name</th><th>Email</th><th>Comment</th><th>Remotes</th></tr>");
-});
-
 $("#Create-modal").click(function () {
     console.log("Click Modla");
     $("#modal-shadow").addClass("d-block");

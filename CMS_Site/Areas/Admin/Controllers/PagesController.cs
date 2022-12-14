@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DAL;
 using DAL.Models;
+using DAL.Repository;
+using DAL.Services;
 
 namespace CMS_Site.Areas.Admin.Controllers
 {
@@ -15,11 +18,20 @@ namespace CMS_Site.Areas.Admin.Controllers
     {
         private DBContextsModels db = new DBContextsModels();
 
+        private IPageRepository pageRepository;
+        private IPageGroupRepository pageGroupRepository;
+
+
+        public PagesController()
+        {
+            pageRepository= new PageRepository(db);
+            pageGroupRepository=new PageGroupRepository(db);
+        }
         // GET: Admin/Pages
         public ActionResult Index()
         {
-            var pages = db.Pages.Include(p => p.PageGroup);
-            return View(pages.ToList());
+            
+            return View(pageRepository.GetAllPage());
         }
 
         // GET: Admin/Pages/Details/5
@@ -29,7 +41,7 @@ namespace CMS_Site.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Page page = db.Pages.Find(id);
+            Page page = pageRepository.GetPageId(id.Value);
             if (page == null)
             {
                 return HttpNotFound();
@@ -40,7 +52,7 @@ namespace CMS_Site.Areas.Admin.Controllers
         // GET: Admin/Pages/Create
         public ActionResult Create()
         {
-            ViewBag.GroupID = new SelectList(db.PageGroups, "GroupId", "GroupTitle");
+            ViewBag.GroupID = new SelectList(pageGroupRepository.GetAllGroup(), "GroupId", "GroupTitle");
             return View();
         }
 
@@ -49,16 +61,23 @@ namespace CMS_Site.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime")] Page page)
+        public ActionResult Create([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime")] Page page, HttpPostedFileBase photoUp )
         {
             if (ModelState.IsValid)
             {
-                db.Pages.Add(page);
-                db.SaveChanges();
+                page.Visit = 0;
+                page.CreateTime = DateTime.Now;
+                if (photoUp != null)
+                {
+                    page.Photo=Guid.NewGuid()+Path.GetExtension(photoUp.FileName);
+                    photoUp.SaveAs(Server.MapPath("/Image/"+page.Photo));
+                }
+                pageRepository.CreatePage(page);
+                pageRepository.Save();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.GroupID = new SelectList(db.PageGroups, "GroupId", "GroupTitle", page.GroupID);
+            ViewBag.GroupID = new SelectList(pageGroupRepository.GetAllGroup(), "GroupId", "GroupTitle", page.GroupID);
             return View(page);
         }
 
@@ -69,12 +88,12 @@ namespace CMS_Site.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Page page = db.Pages.Find(id);
+            Page page = pageRepository.GetPageId(id.Value);
             if (page == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.GroupID = new SelectList(db.PageGroups, "GroupId", "GroupTitle", page.GroupID);
+            ViewBag.GroupID = new SelectList(pageGroupRepository.GetAllGroup(), "GroupId", "GroupTitle", page.GroupID);
             return View(page);
         }
 
@@ -83,15 +102,24 @@ namespace CMS_Site.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime")] Page page)
+        public ActionResult Edit([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime")] Page page, HttpPostedFileBase photoUp)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(page).State = EntityState.Modified;
-                db.SaveChanges();
+                if (photoUp != null)
+                {
+                    if (page.Photo != null)
+                    {
+                        System.IO.File.Delete(Server.MapPath("/Image/" + page.Photo));
+                    }
+                    page.Photo=Guid.NewGuid()+Path.GetExtension(photoUp.FileName);
+                    photoUp.SaveAs(Server.MapPath("/Image/"+page.Photo));
+                }
+                pageRepository.UpdatePage(page);
+                pageRepository.Save();
                 return RedirectToAction("Index");
             }
-            ViewBag.GroupID = new SelectList(db.PageGroups, "GroupId", "GroupTitle", page.GroupID);
+            ViewBag.GroupID = new SelectList(pageGroupRepository.GetAllGroup(), "GroupId", "GroupTitle", page.GroupID);
             return View(page);
         }
 
@@ -102,7 +130,7 @@ namespace CMS_Site.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Page page = db.Pages.Find(id);
+            Page page = pageRepository.GetPageId(id.Value);
             if (page == null)
             {
                 return HttpNotFound();
@@ -115,9 +143,13 @@ namespace CMS_Site.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Page page = db.Pages.Find(id);
-            db.Pages.Remove(page);
-            db.SaveChanges();
+            Page page = pageRepository.GetPageId(id);
+            if (page.Photo != null)
+            {
+                System.IO.File.Delete(Server.MapPath("/Image/" + page.Photo));
+            }
+            pageRepository.DeletePage(page);
+            pageRepository.Save();
             return RedirectToAction("Index");
         }
 

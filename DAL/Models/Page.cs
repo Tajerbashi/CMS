@@ -25,17 +25,18 @@ namespace DAL.Models
         [Required(ErrorMessage = "Description is Empty !")]
         [Display(Name = "Description")]
         [MaxLength(350)]
+        [DataType(DataType.MultilineText)]
         public String Description { get; set; }
 
         [Required(ErrorMessage = "Text is Empty !")]
         [Display(Name = "Text")]
+        [DataType(DataType.MultilineText)]
         public String Text { get; set; }
 
         [Required(ErrorMessage = "Visit is Empty !")]
         [Display(Name = "Visit")]
         public int Visit { get; set; }
 
-        [Required(ErrorMessage = "Photo is Empty !")]
         [Display(Name = "Photo")]
         public string Photo { get; set; }
 
@@ -45,6 +46,7 @@ namespace DAL.Models
 
         [Required(ErrorMessage = "CreateTime is Empty !")]
         [Display(Name = "CreateTime")]
+        [DisplayFormat(DataFormatString ="{0: yyyy/MM/dd}")]
         public DateTime CreateTime { get; set; }
 
         public virtual List<PageComment> PageComments { get; set; }

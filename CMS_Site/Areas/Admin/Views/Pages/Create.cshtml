@@ -49,7 +49,7 @@
         <div class="form-group d-flex flex-sm-column flex-md-row mt-1">
             @Html.LabelFor(model => model.Photo, htmlAttributes: new { @class = "control-label col-md-2 mt-2" })
             <div class="col-md-9">
-                <input  type="file" name="photoUp"/>
+                <input class="form-control"  type="file" name="photoUp"/>
                 @Html.ValidationMessageFor(model => model.Photo, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -73,5 +73,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index","",new { @class="btn btn-dark mt-3"})
 </div>

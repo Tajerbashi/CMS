@@ -8,8 +8,11 @@
 <p>
     @Html.ActionLink("Create New", "Create","",new {@class="btn btn-light"})
 </p>
-<table class="table">
+<table class="table text-light">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.PageGroup.GroupTitle)
         </th>
@@ -17,17 +20,9 @@
             @Html.DisplayNameFor(model => model.Title)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Text)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Visit)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
+
         <th>
             @Html.DisplayNameFor(model => model.ShowSlider)
         </th>
@@ -40,33 +35,29 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            <img src="~/Image/@item.Photo" class="img-thumbnail" style="max-width: 150px;" />
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.PageGroup.GroupTitle)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Text)
-        </td>
+
         <td>
             @Html.DisplayFor(modelItem => item.Visit)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
-        </td>
+
         <td>
             @Html.DisplayFor(modelItem => item.ShowSlider)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CreateTime)
+            @item.CreateTime.PersionCalender()
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PageId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PageId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PageId })
+        <td class="d-flex flex-column justify-content-center align-items-center">
+            @Html.ActionLink("Edit", "Edit", new { id = item.PageId },new {@class="btn btn-info w-100"})
+            @Html.ActionLink("Details", "Details", new { id = item.PageId }, new { @class = "btn btn-warning w-100 mt-1" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.PageId }, new { @class = "btn btn-danger w-100 mt-1" })
         </td>
     </tr>
 }
