@@ -1,0 +1,19 @@
+﻿@model IEnumerable<DAL.Page>
+<div id="aside-2" class="my-2 py-3">
+    <p class="text-center text-light"><i class="fa fa-newspaper-o m-1"></i>Most Important News</p>
+    <hr>
+    <ul id="aside2-2">
+        @foreach (var item in Model)
+        {
+            <li class="aside-2-Group-item d-flex flex-md-row justify-content-start ">
+                <div class="img-aside2-div">
+                <img src="~/image/@item.Photo" class="img-fluid" style="width: 90px; height: 90px;" alt=""></div>
+                <div class="info-aside2-div">
+                    <h6 class="aside-title">@item.Title</h6>
+                    <b class="d-sm-none d-md-block aside-date">Date : @item.CreateTime</b>
+                </div>
+            </li>
+        }
+
+    </ul>
+</div>

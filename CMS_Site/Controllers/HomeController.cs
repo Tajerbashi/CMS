@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DAL;
+using DAL.Repository;
+using DAL.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +11,13 @@ namespace CMS_Site.Controllers
 {
     public class HomeController : Controller
     {
+        DBContextsModels DB=new DBContextsModels();
+        IPageRepository PageRepository;
+
+        public HomeController()
+        {
+            PageRepository=new PageRepository(DB);
+        }
         public ActionResult Index()
         {
             return View();
@@ -15,16 +25,16 @@ namespace CMS_Site.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
+        }
+        public ActionResult ShowSlider()
+        {
+            return PartialView(PageRepository.PagesInSlider());
         }
     }
 }

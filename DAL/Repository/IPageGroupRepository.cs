@@ -16,5 +16,6 @@ namespace DAL.Repository
         bool DeleteGroup(PageGroup pageGroup);
         bool DeleteGroup(int Id);
         void Save();
+        IEnumerable<ShowGroupViewModel> getGroupForView();
     }
 }

@@ -1,0 +1,8 @@
+﻿@model IEnumerable<DAL.ShowGroupViewModel>
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">News Group</a>
+<ul class="dropdown-menu">
+    @foreach (var item in Model)
+    {
+        <li><a class="dropdown-item" href="/Group/@item.GroupId/@item.GroupTitle">@item.GroupTitle</a></li>
+    }
+</ul>

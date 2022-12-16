@@ -65,10 +65,31 @@ namespace DAL.Services
             return DB.Pages.Find(Id);
         }
 
+        public IEnumerable<Page> LastNews(int take = 5)
+        {
+            return DB.Pages.OrderByDescending(news => news.CreateTime).Take(take);
+        }
+
+        public IEnumerable<Page> PagesInSlider()
+        {
+            return DB.Pages.Where(page => page.ShowSlider);
+        }
+
         public void Save()
         {
             DB.SaveChanges();
         }
+
+        public IEnumerable<Page> ShowPageByGroupId(int id)
+        {
+            return DB.Pages.Where(p => p.GroupID==id);
+        }
+
+        public IEnumerable<Page> TopNews(int take = 4)
+        {
+            return DB.Pages.OrderByDescending(n => n.Visit).Take(take);
+        }
+
         public bool UpdatePage(Page page)
         {
             try

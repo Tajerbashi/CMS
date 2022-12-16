@@ -66,6 +66,16 @@ namespace DAL.Services
             return DB.PageGroups;
         }
 
+        public IEnumerable<ShowGroupViewModel> getGroupForView()
+        {
+            return DB.PageGroups.Select(g => new ShowGroupViewModel()
+            {
+                GroupId = g.GroupId,
+                GroupTitle= g.GroupTitle,
+                PageCount=g.Pages.Count
+            });
+        }
+
         public PageGroup GetGroupId(int Id)
         {
             return DB.PageGroups.Find(Id);
