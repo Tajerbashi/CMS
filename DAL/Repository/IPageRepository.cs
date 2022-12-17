@@ -20,5 +20,6 @@ namespace DAL.Repository
         IEnumerable<Page> PagesInSlider();
         IEnumerable<Page> LastNews(int take=5);
         IEnumerable<Page> ShowPageByGroupId(int id);
+        IEnumerable<Page> SearchPage(string search);
     }
 }

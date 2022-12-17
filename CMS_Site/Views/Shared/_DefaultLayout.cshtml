@@ -53,9 +53,9 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2 bg-black border-0 text-light" type="text" placeholder="Search">
-                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                <form class="d-flex" action="@Url.Action("Index","Search")" method="get">
+                    <input id="searchInput" name="search" class="form-control me-2 bg-black border-0 text-light" type="text" placeholder="Search">
+                    <button id="searchButton" class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </div>
@@ -63,7 +63,7 @@
 
     <div class="container">
         <div class="row d-flex flex-row justify-content-center">
-            
+
             <aside id="aside" class="col-sm-12 col-md-4">
 
                 @Html.Action("ShowGroups", "News")
@@ -74,7 +74,7 @@
             <section class="col-sm-12 col-md-8">
                 @RenderBody()
             </section>
-        
+
         </div>
     </div>
 
@@ -202,6 +202,7 @@
     <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/bootstrap.bundle.min.js"></script>
     <script src="~/Scripts/js/Comment.js"></script>
+    <script src="~/Scripts/js/Search.js"></script>
 
 </body>
 </html>

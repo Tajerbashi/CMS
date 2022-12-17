@@ -80,6 +80,11 @@ namespace DAL.Services
             DB.SaveChanges();
         }
 
+        public IEnumerable<Page> SearchPage(string search)
+        {
+            return DB.Pages.Where(c => c.Title.Contains(search) || c.Text.Contains(search) || c.Description.Contains(search) || c.Tags.Contains(search)).Distinct();
+        }
+
         public IEnumerable<Page> ShowPageByGroupId(int id)
         {
             return DB.Pages.Where(p => p.GroupID==id);

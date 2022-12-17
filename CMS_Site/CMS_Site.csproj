@@ -129,6 +129,7 @@
     <Compile Include="Areas\Admin\Controllers\PagesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Extentions\Calender.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -259,6 +260,7 @@
     <Content Include="Scripts\js\AdminScripts.js" />
     <Content Include="Scripts\js\Comment.js" />
     <Content Include="Scripts\js\modal.js" />
+    <Content Include="Scripts\js\Search.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -284,6 +286,7 @@
     <Content Include="Views\News\ShowNewsByGroupId.cshtml" />
     <Content Include="Views\News\ShowNewsInfo.cshtml" />
     <Content Include="Views\News\ShowComments.cshtml" />
+    <Content Include="Views\Search\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

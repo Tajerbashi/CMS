@@ -6,11 +6,11 @@ C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\En
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\EntityFramework.xml
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.Migrations.InitialCreate.resources
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.Migrations.Ver1.resources
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.Migrations.Ver2PageTags.resources
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.pdb
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.Migrations.InitialCreate.resources
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.Migrations.Ver1.resources
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.Migrations.Ver2PageTags.resources

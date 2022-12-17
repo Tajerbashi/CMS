@@ -32,9 +32,16 @@
 
 <div>
     <ul class="d-flex flex-row flex-wrap bg-success bg-gradient p-2 mt-2 rounded-2 text-light">
-        @foreach (var item in Model.Tags.Split(','))
+        @if (Model.Tags != null)
         {
-            <li class="px-2 m-1 bg-light rounded-2 text-dark">@item</li>
+            foreach (var item in Model.Tags.Split(','))
+            {
+                <li class="px-2 m-1 bg-light rounded-2 text-dark link-info"><a href="@Url.Action("Index", "Search", new {search=@item})">@item</a></li>
+            }
+        }
+        else
+        {
+            <li class="px-2 m-1 bg-light rounded-2 text-dark"></li>
         }
 
     </ul>
