@@ -52,6 +52,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\DBContextsModels.cs" />
+    <Compile Include="Migrations\202212171641402_InitialCreate.cs" />
+    <Compile Include="Migrations\202212171641402_InitialCreate.designer.cs">
+      <DependentUpon>202212171641402_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212171659359_Ver-1.cs" />
+    <Compile Include="Migrations\202212171659359_Ver-1.designer.cs">
+      <DependentUpon>202212171659359_Ver-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212171733539_Ver-2-PageTags.cs" />
+    <Compile Include="Migrations\202212171733539_Ver-2-PageTags.designer.cs">
+      <DependentUpon>202212171733539_Ver-2-PageTags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\PageComment.cs" />
     <Compile Include="Models\PageGroup.cs" />
@@ -68,6 +81,17 @@
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202212171641402_InitialCreate.resx">
+      <DependentUpon>202212171641402_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212171659359_Ver-1.resx">
+      <DependentUpon>202212171659359_Ver-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212171733539_Ver-2-PageTags.resx">
+      <DependentUpon>202212171733539_Ver-2-PageTags.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

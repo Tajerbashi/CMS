@@ -111,6 +111,7 @@ C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\ros
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\roslyn\VBCSCompiler.exe
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\Antlr3.Runtime.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\EntityFramework.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\EntityFramework.SqlServer.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -124,6 +125,8 @@ C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\Sys
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\System.Web.WebPages.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\System.Web.WebPages.Razor.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\WebGrease.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.dll.config
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\EntityFramework.xml
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\EntityFramework.SqlServer.xml
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
@@ -141,6 +144,3 @@ C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\obj\Deb
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\obj\Debug\CMS_Site.csproj.CopyComplete
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\obj\Debug\CMS_Site.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\obj\Debug\CMS_Site.pdb
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.dll
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.pdb
-C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\CMS_Site\bin\DAL.dll.config

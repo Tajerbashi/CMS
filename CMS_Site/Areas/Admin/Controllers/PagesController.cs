@@ -61,7 +61,7 @@ namespace CMS_Site.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime")] Page page, HttpPostedFileBase photoUp )
+        public ActionResult Create([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Tags,Photo,ShowSlider,CreateTime")] Page page, HttpPostedFileBase photoUp )
         {
             if (ModelState.IsValid)
             {
@@ -102,7 +102,7 @@ namespace CMS_Site.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime")] Page page, HttpPostedFileBase photoUp)
+        public ActionResult Edit([Bind(Include = "PageId,GroupID,Title,Description,Text,Visit,Photo,ShowSlider,CreateTime,Tags")] Page page, HttpPostedFileBase photoUp)
         {
             if (ModelState.IsValid)
             {

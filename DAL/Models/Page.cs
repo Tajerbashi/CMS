@@ -49,7 +49,8 @@ namespace DAL
         [Display(Name = "CreateTime")]
         [DisplayFormat(DataFormatString ="{0: yyyy/MM/dd}")]
         public DateTime CreateTime { get; set; }
-
+        [Display(Name = "Tags")]
+        public string Tags { get; set; }
         public virtual List<PageComment> PageComments { get; set; }
         public virtual PageGroup PageGroup { get; set; }
 

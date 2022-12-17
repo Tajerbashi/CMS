@@ -257,6 +257,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\AdminScripts.js" />
+    <Content Include="Scripts\js\Comment.js" />
     <Content Include="Scripts\js\modal.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
@@ -281,6 +282,8 @@
     <Content Include="Views\News\LastNews.cshtml" />
     <Content Include="Views\News\Archive.cshtml" />
     <Content Include="Views\News\ShowNewsByGroupId.cshtml" />
+    <Content Include="Views\News\ShowNewsInfo.cshtml" />
+    <Content Include="Views\News\ShowComments.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -338,7 +341,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6054</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44362/</IISUrl>
+          <IISUrl>https://localhost:44356/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>https://localhost:44356/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Services
+namespace DAL
 {
     public class PageCommentRepository : IPageComment
     {
@@ -16,72 +16,18 @@ namespace DAL.Services
         {
             this.DB = db;
         }
-        public bool CreatePageComment(PageComment comment)
-        {
-            try
-            {
-                DB.PageComments.Add(comment);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
 
-        public bool DeletePageComment(PageComment comment)
+        public bool AddComment(PageComment pageComment)
         {
-            try
-            {
-                DB.Entry(comment).State = EntityState.Deleted;
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public bool DeletePageComment(int Id)
-        {
-            try
-            {
-                var comment = GetPageCommentId(Id);
-                DeletePageComment(comment);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public IEnumerable<PageComment> GetAllPageComment()
-        {
-            return DB.PageComments;
-        }
-
-        public PageComment GetPageCommentId(int Id)
-        {
-            return DB.PageComments.Find(Id);
-        }
-
-        public void Save()
-        {
+            DB.PageComments.Add(pageComment);
             DB.SaveChanges();
+            return true;
         }
 
-        public bool UpdatePageComment(PageComment comment)
+        public IEnumerable<PageComment> GetCommentByNewsId(int pageId)
         {
-            try
-            {
-                DB.Entry(comment).State = EntityState.Modified;
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            return DB.PageComments.Where(c => c.PageId == pageId);
         }
+
     }
 }

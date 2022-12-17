@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace DAL.Models
+namespace DAL
 {
     public class PageComment
     {
@@ -22,7 +22,7 @@ namespace DAL.Models
         [MaxLength(200)]
         public string Name { get; set; }
 
-        [MaxLength(200)]
+        [MaxLength(100)]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
@@ -38,9 +38,5 @@ namespace DAL.Models
 
         public virtual Page Page { get; set; }
 
-        public PageComment()
-        {
-
-        }
     }
 }

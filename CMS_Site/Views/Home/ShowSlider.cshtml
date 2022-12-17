@@ -19,15 +19,17 @@
                 {
                     con = "";
                 }
-                <div class="carousel-item align-center @con">
-                    <div class="d-flex flex-row justify-content-center align-item-center">
-                        <img class="slider1-img img-fluid shadow" src="~/image/@item.Photo" style="width:50%; height:300px;">
-                        <div class="slider1-info text-light p-3">
-                            <h1>@item.Title</h1>
-                            <p>@item.Description</p>
+                <a href="/News/@item.PageId">
+                    <div class="carousel-item align-center @con">
+                        <div class="d-flex flex-row justify-content-center align-item-center">
+                            <img class="slider1-img img-fluid shadow" src="~/image/@item.Photo" style="width:50%; height:300px;">
+                            <div class="slider1-info text-light p-3">
+                                <h1>@item.Title</h1>
+                                <p>@item.Description</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 count = 2;
             }
 

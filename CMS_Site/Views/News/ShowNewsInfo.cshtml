@@ -1,0 +1,74 @@
+﻿@model DAL.Page
+
+@{
+    ViewBag.Title = "ShowNewsInfo";
+}
+<ul class="breadcrumb d-flex flex-row bg-primary bg-gradient p-2 mt-2 rounded-2 text-light">
+    <li class="breadcrumb-item"><a class=" text-light" href="/">Home</a></li>
+    <li class="breadcrumb-item"><a class=" text-light" href="/Archive">News</a></li>
+    <li class="breadcrumb-item"><a class=" text-light" href="/Group/@Model.PageGroup.GroupId/@Model.PageGroup.GroupTitle">@Model.PageGroup.GroupTitle</a></li>
+    <li class="breadcrumb-item text-light active">@Model.Title</li>
+</ul>
+<div class="container-fluid text-light">
+    <div class="row d-flex flex-row justify-content-center align-content-center">
+        <div class="col-12 d-flex flex-column justify-content-between">
+            <h3>Title : @Model.Title</h3>
+            <h6>Created : @Model.CreateTime</h6>
+            <hr style="color: #ffffff;" />
+            <div>
+                <b>Description</b>
+                <p>@Model.Description</p>
+                <hr style="color: #ffffff;" />
+            </div>
+            <img src="~/image/@Model.Photo" class="img-fluid shadow rounded-1" style="" />
+            <div class="mt-4">
+                <b style="color: #b6ff00">More Deatils</b>
+                <p>@Model.Text</p>
+            </div>
+            <a href="/" class="btn btn-warning w-100">Back Home</a>
+        </div>
+    </div>
+</div>
+
+<div>
+    <ul class="d-flex flex-row flex-wrap bg-success bg-gradient p-2 mt-2 rounded-2 text-light">
+        @foreach (var item in Model.Tags.Split(','))
+        {
+            <li class="px-2 m-1 bg-light rounded-2 text-dark">@item</li>
+        }
+
+    </ul>
+</div>
+@*Users Comment*@
+<div  class="container-fluid mt-3 rounded-5 text-light" style="background: linear-gradient(0deg,#00a9ff,#007aff00);">
+    
+    <div class="row bg-primary bg-gradient rounded-5">
+        <div class="col-12   d-flex flex-row justify-content-between align-items-center p-2">
+            <div style="font-size: 1.5rem;">
+                <i class="fa fa-comments m-1"></i>Comments
+            </div>
+            <div style="font-size: 1.2rem;">@Model.PageComments.Count Comment</div>
+        </div>
+    </div>
+
+    <div id="CommentList">
+        @Html.Action("ShowComments", "News", new { id = Model.PageId })
+    </div>
+
+    <div class="row p-4 shadow">
+        <p><i class="fa fa-comment"></i>   Write Your Comment</p>
+        <hr style="color: #ffffff;"/>
+        <form class="form align-items-center">
+            @Html.HiddenFor(c => c.PageId,new {id="PageID"})
+            <input id="name" type="text" class="form-control mt-2" placeholder="Full Name" name="name" />
+            <input id="email" type="email" class="form-control mt-2" placeholder="Email" name="email" />
+            <div class="d-flex flex-row mt-2">
+                <input id="capchapInput" type="text" class="form-control w-50 mx-1 text-center" placeholder="Security Code" maxlength="5" />
+                <input id="capchapShow" type="text" class="form-control w-50 mx-1 text-center" placeholder="58689" disabled />
+                <i id="refresh" class="fa fa-refresh w-25 fa-2x m-1 text-center" style="cursor: pointer;"></i>
+            </div>
+            <textarea id="comment" placeholder="Comment ..." class="form-control mt-2" name="comment" rows="5"></textarea>
+            <input id="submit" type="button" class="btn btn-success w-100 text-center mt-2" value="Submit" />
+        </form>
+    </div>
+</div>
