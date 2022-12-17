@@ -1,5 +1,4 @@
-﻿using DAL.Models;
-using DAL.Repository;
+﻿using DAL.Repository;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -22,6 +21,11 @@ namespace DAL
             DB.PageComments.Add(pageComment);
             DB.SaveChanges();
             return true;
+        }
+
+        public void Dispose()
+        {
+            DB.Dispose();
         }
 
         public IEnumerable<PageComment> GetCommentByNewsId(int pageId)

@@ -8,12 +8,12 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DAL;
-using DAL.Models;
 using DAL.Repository;
 using DAL.Services;
 
 namespace CMS_Site.Areas.Admin.Controllers
 {
+    [Authorize]
     public class PagesController : Controller
     {
         private DBContextsModels db = new DBContextsModels();
@@ -30,7 +30,6 @@ namespace CMS_Site.Areas.Admin.Controllers
         // GET: Admin/Pages
         public ActionResult Index()
         {
-            
             return View(pageRepository.GetAllPage());
         }
 

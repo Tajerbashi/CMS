@@ -127,6 +127,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\PageGroupsController.cs" />
     <Compile Include="Areas\Admin\Controllers\PagesController.cs" />
+    <Compile Include="Controllers\AdminLoginsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
@@ -287,11 +288,18 @@
     <Content Include="Views\News\ShowNewsInfo.cshtml" />
     <Content Include="Views\News\ShowComments.cshtml" />
     <Content Include="Views\Search\Index.cshtml" />
+    <Content Include="Views\AdminLogins\Create.cshtml" />
+    <Content Include="Views\AdminLogins\Delete.cshtml" />
+    <Content Include="Views\AdminLogins\Details.cshtml" />
+    <Content Include="Views\AdminLogins\Edit.cshtml" />
+    <Content Include="Views\AdminLogins\Index.cshtml" />
+    <Content Include="Views\AdminLogins\LoginPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

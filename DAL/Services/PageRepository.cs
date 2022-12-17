@@ -1,5 +1,4 @@
-﻿using DAL.Models;
-using DAL.Repository;
+﻿using DAL.Repository;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -55,6 +54,12 @@ namespace DAL.Services
                 return false;
             }
         }
+
+        public void Dispose()
+        {
+            DB.Dispose();
+        }
+
         public IEnumerable<Page> GetAllPage()
         {
             return DB.Pages;

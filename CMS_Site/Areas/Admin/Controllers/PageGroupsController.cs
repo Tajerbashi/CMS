@@ -7,12 +7,12 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DAL;
-using DAL.Models;
 using DAL.Repository;
 using DAL.Services;
 
 namespace CMS_Site.Areas.Admin.Controllers
 {
+    [Authorize]
     public class PageGroupsController : Controller
     {
         public IPageGroupRepository pageGroupRepository;

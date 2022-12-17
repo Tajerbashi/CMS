@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace DAL.Services
 {
-    public class PageGroupRepository : IPageGroupRepository
+    public class AdminLoginRepository : IAdminLoginRepository
     {
         DBContextsModels DB;
-        public PageGroupRepository(DBContextsModels db)
+        public AdminLoginRepository(DBContextsModels DB)
         {
-            this.DB= db;
+            this.DB = DB;
         }
-        public bool CreateGroup(PageGroup pageGroup)
+        public bool CreateAdmin(DAL.AdminLogin admin)
         {
             try
             {
-                DB.PageGroups.Add(pageGroup);
+                DB.AdminLogins.Add(admin);
                 return true;
             }
             catch
@@ -28,11 +28,11 @@ namespace DAL.Services
             }
         }
 
-        public bool DeleteGroup(PageGroup pageGroup)
+        public bool DeleteAdmin(DAL.AdminLogin admin)
         {
             try
             {
-                DB.Entry(pageGroup).State= EntityState.Deleted;
+                DB.Entry(admin).State = EntityState.Deleted;
                 return true;
             }
             catch
@@ -41,12 +41,12 @@ namespace DAL.Services
             }
         }
 
-        public bool DeleteGroup(int Id)
+        public bool DeleteAdmin(int Id)
         {
             try
             {
-                var group=GetGroupId(Id);
-                DeleteGroup(group);
+                DAL.AdminLogin admin = DB.AdminLogins.Find(Id);
+                this.DeleteAdmin(admin);
                 return true;
             }
             catch
@@ -60,24 +60,27 @@ namespace DAL.Services
             DB.Dispose();
         }
 
-        public IEnumerable<PageGroup> GetAllGroup()
+        public DAL.AdminLogin GetAdminById(int Id)
         {
-            return DB.PageGroups;
+            return DB.AdminLogins.Find(Id);
         }
 
-        public IEnumerable<ShowGroupViewModel> getGroupForView()
+        public IEnumerable<DAL.AdminLogin> GetAllAdmin()
         {
-            return DB.PageGroups.Select(g => new ShowGroupViewModel()
+            return DB.AdminLogins.ToList();
+        }
+
+        public bool IsAdmin(DAL.AdminLogin admin)
+        {
+            try
             {
-                GroupId = g.GroupId,
-                GroupTitle= g.GroupTitle,
-                PageCount=g.Pages.Count
-            });
-        }
+                return DB.AdminLogins.Any(admins => admins.Username == admin.Username && admins.Password == admin.Password);
 
-        public PageGroup GetGroupId(int Id)
-        {
-            return DB.PageGroups.Find(Id);
+            }
+            catch
+            {
+                return false;
+            } 
         }
 
         public void Save()
@@ -85,11 +88,11 @@ namespace DAL.Services
             DB.SaveChanges();
         }
 
-        public bool UpdateGroup(PageGroup pageGroup)
+        public bool UpdateAdmin(DAL.AdminLogin admin)
         {
             try
             {
-                DB.Entry(pageGroup).State = EntityState.Modified;
+                DB.Entry(admin).State= EntityState.Modified;
                 return true;
             }
             catch
@@ -97,6 +100,5 @@ namespace DAL.Services
                 return false;
             }
         }
-
     }
 }

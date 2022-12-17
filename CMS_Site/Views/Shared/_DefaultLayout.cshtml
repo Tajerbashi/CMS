@@ -53,6 +53,20 @@
                         </ul>
                     </li>
                 </ul>
+                
+                <div class="d-flex flex-column justify-content-between align-items-center">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="#" class="text-light">@User.Identity.Name</a>
+                        <a href="/AdminLogins/SignOut" class="text-danger">Sign Out</a>
+                    }
+                    else
+                    {
+                        <a href="#" class="text-success">Sign up</a>
+                        <a href="/AdminLogins/LoginPage" class="text-primary">Log in</a>
+                    }
+                </div>
+
                 <form class="d-flex" action="@Url.Action("Index","Search")" method="get">
                     <input id="searchInput" name="search" class="form-control me-2 bg-black border-0 text-light" type="text" placeholder="Search">
                     <button id="searchButton" class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
@@ -203,6 +217,6 @@
     <script src="~/Scripts/bootstrap.bundle.min.js"></script>
     <script src="~/Scripts/js/Comment.js"></script>
     <script src="~/Scripts/js/Search.js"></script>
-
+    @RenderSection("Scripts",false)
 </body>
 </html>

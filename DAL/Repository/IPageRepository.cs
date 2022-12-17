@@ -1,5 +1,4 @@
-﻿using DAL.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
-    public interface IPageRepository
+    public interface IPageRepository:IDisposable
     {
         IEnumerable<Page> GetAllPage();
         Page GetPageId(int Id);

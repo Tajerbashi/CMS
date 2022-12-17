@@ -1,5 +1,4 @@
 ﻿using DAL;
-using DAL.Models;
 using DAL.Repository;
 using DAL.Services;
 using System;
@@ -23,7 +22,6 @@ namespace CMS_Site.Controllers
             pageComment = new PageCommentRepository(db);
         }
         // GET: News
-        [HttpGet]
         public ActionResult ShowGroups()
         {
             return PartialView(pageGroupRepository.getGroupForView());

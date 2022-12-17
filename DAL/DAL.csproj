@@ -64,17 +64,25 @@
     <Compile Include="Migrations\202212171733539_Ver-2-PageTags.designer.cs">
       <DependentUpon>202212171733539_Ver-2-PageTags.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202212172035077_Ver-3-AdminLogin.cs" />
+    <Compile Include="Migrations\202212172035077_Ver-3-AdminLogin.designer.cs">
+      <DependentUpon>202212172035077_Ver-3-AdminLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AdminLogin.cs" />
     <Compile Include="Models\Page.cs" />
     <Compile Include="Models\PageComment.cs" />
     <Compile Include="Models\PageGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IAdminLoginRepository.cs" />
     <Compile Include="Repository\IPageComment.cs" />
     <Compile Include="Repository\IPageGroupRepository.cs" />
     <Compile Include="Repository\IPageRepository.cs" />
+    <Compile Include="Services\AdminLoginRepository.cs" />
     <Compile Include="Services\PageCommentRepository.cs" />
     <Compile Include="Services\PageGroupRepository.cs" />
     <Compile Include="Services\PageRepository.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\ShowGroupViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202212171733539_Ver-2-PageTags.resx">
       <DependentUpon>202212171733539_Ver-2-PageTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212172035077_Ver-3-AdminLogin.resx">
+      <DependentUpon>202212172035077_Ver-3-AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

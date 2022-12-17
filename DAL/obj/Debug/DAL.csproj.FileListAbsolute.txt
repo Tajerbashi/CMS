@@ -14,3 +14,4 @@ C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DA
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.dll
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Debug\DAL.Migrations.Ver3AdminLogin.resources
