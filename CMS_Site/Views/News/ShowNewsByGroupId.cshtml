@@ -18,10 +18,10 @@
                             <h6>@item.Title</h6>
                             <h6>@item.CreateTime</h6>
                         </div>
-                        <div class="d-flex flex-row justify-content-between w-100 last-item-info">
-                            <p>@item.Title</p>
-                            <a class="btn btn-primary last-news-btn m-2" href="/News/@item.PageId">Click</a>
+                        <div class="d-flex flex-row justify-content-between w-100 last-item-info overflow-hidden">
+                            <p>@item.Text</p>
                         </div>
+                            <a class="btn btn-primary bg-gradient last-news-btn m-2 w-75" href="/News/@item.PageId">Click</a>
                     </div>
                 </div>
             }

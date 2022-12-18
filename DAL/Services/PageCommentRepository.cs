@@ -18,9 +18,16 @@ namespace DAL
 
         public bool AddComment(PageComment pageComment)
         {
-            DB.PageComments.Add(pageComment);
-            DB.SaveChanges();
-            return true;
+            try
+            {
+                DB.PageComments.Add(pageComment);
+                DB.SaveChanges();
+                return true;
+            }
+            catch 
+            {
+                return false;
+            }
         }
 
         public void Dispose()
