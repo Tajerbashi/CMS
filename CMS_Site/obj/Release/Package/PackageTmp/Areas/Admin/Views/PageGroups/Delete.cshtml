@@ -1,0 +1,28 @@
+﻿@model DAL.PageGroup
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h5 style="color: red;">Are you sure you want to delete @Model.GroupTitle ?</h5>
+
+<div>
+    <h4>PageGroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt style="color: #00ff21;">
+            @Html.DisplayNameFor(model => model.GroupTitle)
+        </dt>
+        <dd style="color: #003cff; font-size: 1.3rem;">
+            @Html.DisplayFor(model => model.GroupTitle)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" />
+        </div>
+    }
+</div>

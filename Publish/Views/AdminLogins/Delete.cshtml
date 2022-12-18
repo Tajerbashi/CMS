@@ -1,0 +1,36 @@
+﻿@model DAL.AdminLogin
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="bg-danger bg-gradient text-light rounded-5 p-3">Delete</h2>
+
+<h3 class="text-warning">Are you sure you want to delete <span style="color:#ff6868; font-size:2.5rem;">@Model.Username</span>?</h3>
+    <hr />
+    <div class="text-start text-light">
+        <p>
+            @Html.DisplayNameFor(model => model.Username):
+            @Html.DisplayFor(model => model.Username)
+        </p>
+        <p>
+            @Html.DisplayNameFor(model => model.Email):
+            @Html.DisplayFor(model => model.Email)
+        </p>
+        <p>
+            @Html.DisplayNameFor(model => model.Password):
+            @Html.DisplayFor(model => model.Password)
+        </p>
+        
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Back to List", "Index","",new {@class="btn btn-dark"})
+            </div>
+        }
+    </div>

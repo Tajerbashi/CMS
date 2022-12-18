@@ -1,0 +1,213 @@
+body{
+    background: linear-gradient(90deg,rgb(0, 17, 98),rgb(0, 29, 255));
+}
+a{
+    text-decoration: none;
+}
+ul,h6{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header ,nav{
+    box-shadow: 0 0 10px 0 #000;
+    background: linear-gradient(90deg, rgb(0, 2, 119),rgb(0, 0, 0));
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+}
+.social-header{
+    color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.fa-instagram{
+    color: rgb(255, 60, 0);
+}
+.fa-instagram:hover{
+    color: rgb(247, 0, 255);
+
+}
+.fa-twitter{
+    color: rgb(136, 197, 255);
+}
+.fa-twitter:hover{
+    color: rgb(0, 110, 255);
+
+}
+.fa-telegram{
+    color: rgb(108, 147, 255);
+}
+.fa-telegram:hover{
+    color: rgb(0, 119, 255);
+
+}
+.fa-whatsapp{
+    color: rgb(31, 156, 0);
+}
+.fa-whatsapp:hover{
+    color: rgb(0, 255, 157);
+
+}
+.fa-youtube{
+    color: rgb(255, 0, 0);
+}
+.fa-youtube:hover{
+    color: rgb(255, 115, 0);
+
+}
+
+.fa-google{
+    color: rgb(255, 208, 0);
+}
+.fa-google:hover{
+    color: rgb(255, 115, 0);
+
+}
+.fa-facebook-f{
+    color: rgb(81, 98, 255);
+}
+.fa-facebook-f:hover{
+    color: rgb(71, 166, 255);
+
+}
+.fa-linkedin{
+    color: rgb(0, 89, 255);
+}
+.fa-linkedin:hover{
+    color: rgb(0, 174, 255);
+
+}
+.fa-github{
+    color: rgb(126, 126, 126);
+}
+.fa-github:hover{
+    color: rgb(255, 255, 255);
+
+}
+.aside-1-Group-item{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 90%;
+    margin-top: 0.3rem;
+    cursor: pointer;
+    background: linear-gradient(90deg,rgb(0, 47, 255),rgb(30, 0, 99));
+    padding-left: 0.5rem;
+    border-radius: 0.3rem;
+    height: 2rem;
+}
+#aside-1, #aside-2{
+    background: linear-gradient(0deg, rgb(0, 140, 255), rgb(26, 28, 145));
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 #000;
+}
+.item-N{
+    margin: 0.1rem;
+    background: rgb(82, 43, 226);
+    padding: 0.1rem;
+    color: rgb(255, 255, 255);
+    border-radius: 0.3rem;
+}
+.aside-1-Group-item:hover {
+    animation-name: border-b-fade;
+    animation-duration: 1s;
+    color: rgb(255, 255, 255) !important;
+    background: linear-gradient(90deg,rgb(173, 0, 0),rgba(170, 170, 170, 0));
+}
+@keyframes border-b-fade {
+    0%{
+        width: 80%;
+    }
+    100%{
+    }
+}
+.aside-2-Group-item{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    cursor: pointer;
+    background: linear-gradient(90deg,rgb(0, 8, 114),rgba(170, 170, 170, 0));
+    border-radius: 0.5rem;
+    margin-top: 0.2rem;
+}
+.aside-2-Group-item:hover{
+    background: linear-gradient(90deg,rgb(0, 81, 255),rgba(255, 255, 255, 0));
+}
+.img-aside2-div{
+    border-width: 90%;
+}
+.img-aside2-div > img{
+    border-radius: 0.5rem;
+    margin-right: 0.2rem;
+    margin: 0.5rem;
+    
+}
+#aside2-2{
+    padding: 0 0.5rem ;
+}
+.info-aside2-div{
+    padding: 0.8rem 0rem;
+}
+.aside-title{
+    color: rgb(219, 219, 219);
+    font-size: 15px;
+}
+.aside-date{
+    color: rgb(146, 146, 146);
+}
+#slider-news{
+    box-shadow: 0 0 10px 0 #000;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.slider1-img{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.616) !important;
+    width: 50%;
+    border-radius: 1rem;
+
+}
+.slider1-img:hover{
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255);
+}
+.slider1-info{
+    width: 50%;
+}
+.last-news-btn{
+    padding: 0.1rem 0.8rem;
+}
+.news-items{
+    border-bottom: 1px solid #000;
+    margin-top: 0.5rem;
+}
+.news-items:hover{
+    background: linear-gradient(90deg, rgb(0, 10, 151), rgb(0, 60, 255));
+    cursor: pointer;
+    border-radius: 1rem ;
+}
+#last-news{
+    box-shadow: 0 0 10px 0 #000;
+    border-radius: 1rem;
+}
+.last-item-title{
+    color: #fff;
+    background: linear-gradient(90deg, rgb(0, 51, 146),rgb(0, 119, 255));
+    padding: 0.5rem 1rem;
+    border-radius: 1rem ;
+}
+.last-item-info{
+    color: #fff;
+    padding: 0.1rem 1rem;
+    border-radius: 1rem ;
+}
+#last-title-section{
+    background: linear-gradient(90deg,rgb(35, 65, 202),rgba(238, 238, 238, 0.192));
+}
+.section-img-item{
+    box-shadow: 0 0 10px 0 #000;
+    border-radius: 1rem;
+}
+#footer{
+    margin-top: 2rem;
+    box-shadow: 0 0 10px 0;
+}

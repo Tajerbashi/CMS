@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Scripts/font-awesome/css/font-awesome.min.css">
+    <link href="~/Content/CSS1/Style.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <header class="m-2 px-3 ">
+        <div class="container-fluid d-flex flex-row justify-content-between m-3 p-3">
+            <div class="row">
+                <strong>@Calender.PersionCalender(DateTime.Now)</strong>
+                <h1>CMS News Weblog</h1>
+            </div>
+            <div class="row d-flex flex-column">
+                <a class="social-header"><i class="fa fa-instagram"></i></a>
+                <a class="social-header"><i class="fa fa-twitter"></i></a>
+                <a class="social-header"><i class="fa fa-telegram"></i></a>
+                <a class="social-header"><i class="fa fa-whatsapp"></i></a>
+                <a class="social-header"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Admin/PageGroups/Index">NEWS 24</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        @Html.Action("ShowGroupsInNavbar", "News")
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Archive">Archive</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Medias</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Photo</a></li>
+                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                            <li><a class="dropdown-item" href="#">Topics</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="d-flex flex-column justify-content-between align-items-center">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="#" class="text-light">@User.Identity.Name</a>
+                        <a href="/AdminLogins/SignOut" class="text-danger">Sign Out</a>
+                    }
+                    else
+                    {
+                        <a href="#" class="text-success">Sign up</a>
+                        <a href="/AdminLogins/LoginPage" class="text-primary">Log in</a>
+                    }
+                </div>
+
+                <form class="d-flex" action="@Url.Action("Index","Search")" method="get">
+                    <input id="searchInput" name="search" class="form-control me-2 bg-black border-0 text-light" type="text" placeholder="Search">
+                    <button id="searchButton" class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row d-flex flex-row justify-content-center">
+
+            <aside id="aside" class="col-sm-12 col-md-4">
+
+                @Html.Action("ShowGroups", "News")
+                @Html.Action("ShowTopNews", "News")
+
+            </aside>
+
+            <section class="col-sm-12 col-md-8">
+                @RenderBody()
+            </section>
+
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark " id="footer">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-dark text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+                <!-- Right -->
+                <div id="social-footer">
+                    <a href="" class="me-4 text-reset">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Company name
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Angular</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">React</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Vue</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Laravel</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fa fa-home me-3"></i> Tehran, Azadi Tower</p>
+                            <p>
+                                <i class="fa fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fa fa-phone me-3"></i> +98 902 234 5678</p>
+                            <p><i class="fa fa-print me-3"></i> +98 902 234 5679</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+            <!-- Copyright -->
+            <div class="text-center p-4 bg-black shadow" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="#">News24.news</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+
+
+    <script src="~/Scripts/jquery-3.6.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/js/Comment.js"></script>
+    <script src="~/Scripts/js/Search.js"></script>
+    @RenderSection("Scripts",false)
+</body>
+</html>

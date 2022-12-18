@@ -1,0 +1,20 @@
+﻿@model DAL.PageGroup
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div>
+    <h6>Details PageGroup</h6>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GroupTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GroupTitle)
+        </dd>
+
+    </dl>
+</div>

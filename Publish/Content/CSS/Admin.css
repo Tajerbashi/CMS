@@ -1,0 +1,24 @@
+﻿body {
+    text-align: center;
+}
+a{
+    color: #ff6a00;
+}
+.aside_btn{
+    width: 9.5rem;
+    background: #ff6a00;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.aside_btn:hover {
+    color: #ffffff;
+}
+#pro-pic{
+    width: 5rem;
+    height: 7rem;
+}
+#G-table {
+    color: #ffffff;
+}

@@ -1,0 +1,114 @@
+﻿@model DAL.Page
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 class="text-bg-warning p-2 text-danger rounded-5">Delete Page</h2>
+
+<h3 class="text-light">Are you sure you want to delete <strong class="text-warning">@Model.Title</strong> ?</h3>
+<div id="delete-dd" class="text-light">
+    <hr />
+    <dl class="dl-horizontal">
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.PageGroup.GroupTitle)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PageGroup.GroupTitle)
+            </dd>
+        </div>
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+        </div>
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+        </div>
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.Text)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Text)
+            </dd>
+        </div>
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.Tags)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tags)
+            </dd>
+        </div>
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.Visit)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Visit)
+            </dd>
+        </div>
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.Photo)
+            </dt>
+
+            <dd>
+                <img src="~/Image/@Model.Photo" class="img-thumbnail" style="max-width: 200px;" />
+            </dd>
+        </div>
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.ShowSlider)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ShowSlider)
+            </dd>
+        </div>
+
+        <div class="shadow d-flex flex-row justify-content-between align-items-center p-3">
+            <dt class="text-dark">
+                @Html.DisplayNameFor(model => model.CreateTime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CreateTime)
+            </dd>
+        </div>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger mt-2" />
+            @Html.ActionLink("Back to List", "Index","",new {@class="btn btn-dark mt-2"})
+        </div>
+    }
+</div>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<DAL.Page>
+
+<div id="slider-news" class=" bg-primary col-sm-12 my-2 p-3" ">
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            @{
+                int count = 0;
+                string con = "";
+            }
+            @foreach (var item in Model)
+            {
+                if (count == 0)
+                {
+                    con = "active";
+                }
+                else
+                {
+                    con = "";
+                }
+                <a href="/News/@item.PageId">
+                    <div class="carousel-item align-center @con">
+                        <div class="d-flex flex-row justify-content-center align-item-center">
+                            <img class="slider1-img img-fluid shadow" src="~/image/@item.Photo" style="width:50%; height:300px;">
+                            <div class="slider1-info text-light p-3">
+                                <h1>@item.Title</h1>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                count = 2;
+            }
+
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>

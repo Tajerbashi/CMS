@@ -1,0 +1,90 @@
+﻿@model DAL.Page
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Page</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.PageGroup.GroupTitle)
+        </dt>
+
+        <dd class="text-light mb-5">
+            @Html.DisplayFor(model => model.PageGroup.GroupTitle)
+        </dd>
+
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd class="text-light mb-5">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd class="text-light mb-5">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+
+        <dd class="text-light mb-5">
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+
+        <dd class="text-light mb-5">
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.Visit)
+        </dt>
+
+        <dd class="text-light mb-5">
+            @Html.DisplayFor(model => model.Visit)
+        </dd>
+
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd class="text-light mb-5">
+            <img src="~/Image/@Model.Photo" class="img-thumbnail" style="max-width: 200px;" />
+        </dd>
+
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.ShowSlider)
+        </dt>
+
+        <dd class="text-light mb-5">
+            @Html.DisplayFor(model => model.ShowSlider)
+        </dd>
+
+        <dt class="text-bg-light p-2 shadow mb-3">
+            @Html.DisplayNameFor(model => model.CreateTime)
+        </dt>
+
+        <dd class="text-light mb-5">
+            @Html.DisplayFor(model => model.CreateTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PageId },new {@class="btn btn-info"})
+    @Html.ActionLink("Back to List", "Index","",new {@class="btn btn-dark"})
+</p>

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<DAL.Page>
+<div id="last-news" class=" col-sm-12 my-2 py-3 bg-primary">
+    <h5 id="last-title-section" class="bg-primary p-3 text-light">
+        <i class="fa fa-font-awesome"></i>   Last News
+    </h5>
+    <div>
+        <div class="container-fluid">
+
+            @foreach (var item in Model)
+            {
+                <div class="news-items d-flex flex-row" style="height:170px">
+                    <div class="p-2"><img src="~/image/@item.Photo" class="img-fluid section-img-item" style="width: 300px; height: 150px;" alt=""></div>
+                    <div class="p-2 d-flex flex-column justify-content-between align-items-center w-100">
+                        <div class="d-flex flex-row justify-content-between w-100 last-item-title">
+                            <h6>@item.Title</h6>
+                            <h6>@item.CreateTime</h6>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between w-100 last-item-info overflow-hidden">
+                            <p>@item.Text</p>
+                        </div>
+                        <a class="btn btn-dark last-news-btn m-2 shadow w-100" href="/News/@item.PageId">Click</a>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</div>

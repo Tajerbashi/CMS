@@ -1,0 +1,22 @@
+﻿@model IEnumerable<DAL.PageComment>
+
+
+@foreach (var item in Model)
+{
+    <div class="row p-2 shadow">
+        <div class="bg-primary bg-gradient rounded-5 py-3 my-2">
+            <div class="col-12 d-flex flex-row">
+                <img src="~/Photos/Pic (8).jpg" class="img-thumbnail rounded-5" style="max-width: 100px;" />
+                <div class="d-flex flex-column m-2">
+                    <b>@item.Name</b>
+                    <b>@item.CreateDate</b>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="px-5 py-2">
+                    @item.Comment
+                </p>
+            </div>
+        </div>
+    </div>
+}

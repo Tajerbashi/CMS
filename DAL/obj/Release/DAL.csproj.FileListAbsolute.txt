@@ -1,0 +1,17 @@
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Release\DAL.dll.config
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Release\DAL.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Release\DAL.pdb
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Release\EntityFramework.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Release\EntityFramework.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.Migrations.InitialCreate.resources
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.Migrations.Ver1.resources
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.Migrations.Ver2PageTags.resources
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.Migrations.Ver3AdminLogin.resources
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.csproj.GenerateResource.cache
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.csproj.CopyComplete
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET MVC\Pro-1-CMS_Site\DAL\obj\Release\DAL.pdb

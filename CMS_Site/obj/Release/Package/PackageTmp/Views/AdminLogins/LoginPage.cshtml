@@ -1,0 +1,54 @@
+﻿@model DAL.LoginViewModel
+
+@{
+    ViewBag.Title = "LoginPage";
+}
+
+<h2 class="text-light mt-2 text-center">Login to Site</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal text-center text-light">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group d-flex flex-row my-2">
+            @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2 mt-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group d-flex flex-row my-2">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2 mt-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group d-flex flex-row my-2 bg-gradient text-light rounded-5">
+            @Html.LabelFor(model => model.IsRemember, htmlAttributes: new { @class = "control-label col-md-3 mt-2" })
+            <div class="col-md-8">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.IsRemember)
+                    @Html.ValidationMessageFor(model => model.IsRemember, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group d-flex flex-row my-2">
+            <div class="col-md-12">
+                <input type="submit" value="Login" class="btn btn-primary w-50" />
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

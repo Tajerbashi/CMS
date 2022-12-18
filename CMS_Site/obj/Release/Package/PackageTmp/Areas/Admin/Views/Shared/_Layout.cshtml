@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/CSS/modal.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/CSS/Admin.css" rel="stylesheet" />
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+</head>
+<body>
+    <header class="m-2 shadow p-3 bg-dark rounded-pill">
+        <div id="header">
+            <a class="btn bg-success text-light" href="/">Publish</a>
+            <a class="btn bg-danger text-light" href="https://google.com">Exit</a>
+        </div>
+    </header>
+
+    <div class="container-fluid" id="section">
+        <div class="row">
+            <aside class="d-flex flex-sm-row flex-md-column shadow col-sm-12 col-md-2 p-3 bg-primary">
+                <div>
+                    <img class="img-fluid shadow rounded-5" id="pro-pic" src="~/Photos/Pic (1).jpg" />
+                    <p class="card-title bg-white mt-3 shadow">Profile</p>
+                </div>
+                <div>
+                    <a class="btn aside_btn" href="/AdminLogins/Index">Personal</a>
+                    <a class="btn aside_btn" href="/Admin/PageGroups/Index">Group Page</a>
+                    <a class="btn aside_btn" href="@Url.Action("Index","Pages")">Page</a>
+                    <a class="btn aside_btn" href="@Url.Action("Index","Admin/PageGroups")">Page Comments</a>
+                </div>
+            </aside>
+            <section class="col-sm-12 col-md-10 p-3 bg-primary bg-gradient ">
+                <div>
+                    @RenderBody()
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="modal-shadow">
+        <div id="modal-tab">
+
+            <div id="modal-header">
+                <p id="modal-title">Title</p>
+                <span id="close-X">&times;</span>
+            </div>
+
+            <div id="modal-body">
+                body
+            </div>
+
+            <div id="modal-footer">
+            </div>
+
+        </div>
+    </div>
+    <!-- End Modal -->
+    <script src="~/Scripts/jquery-3.6.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/js/AdminScripts.js" defer></script>
+    <script src="~/Scripts/js/modal.js"></script>
+</body>
+</html>

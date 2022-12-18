@@ -1,0 +1,17 @@
+﻿@model IEnumerable<DAL.ShowGroupViewModel> 
+<div id="aside-1" class="my-2 py-3">
+    <div class="w-100">
+        <p class="text-center text-light"><i class="fa fa-folder m-1"></i>Group Title</p>
+        <hr style="color: rgb(255, 255, 255) !important;">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li class="aside-1-Group-item d-flex flex-row justify-content-between ">
+                    <a class="text-light" href="/Group/@item.GroupId/@item.GroupTitle">> @item.GroupTitle</a><p class="item-N">@item.PageCount</p>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+

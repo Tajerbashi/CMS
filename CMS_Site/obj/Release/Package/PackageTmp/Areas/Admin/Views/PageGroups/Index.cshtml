@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DAL.PageGroup>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<button id="Create-modal" class="btn btn-light ">Create</button>
+
+<table class="table" id="G-table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GroupTitle)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupTitle)
+            </td>
+
+            <td>
+                <a class="btn btn-warning" onclick="EditGroup(@item.GroupId)">
+                    Edit<i class="glyphicon glyphicon-edit"></i>
+                </a>
+                <a class="btn btn-info" onclick="DetailsGroup(@item.GroupId)">
+                    Details<i class="glyphicon glyphicon-edit"></i>
+                </a>
+                <a class="btn btn-danger" onclick="DeleteGroup(@item.GroupId)">
+                    Delete<i class="glyphicon glyphicon-edit"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+
